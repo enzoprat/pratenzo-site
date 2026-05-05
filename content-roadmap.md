@@ -1,6 +1,6 @@
 # Content Roadmap — Prat Enzo
 
-Roadmap éditoriale pour développer le SEO de pratenzo.fr après la V1 livrée.
+Roadmap éditoriale pour développer le SEO de enzoprat.fr après la V1 livrée.
 
 ---
 

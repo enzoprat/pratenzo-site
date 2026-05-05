@@ -72,7 +72,7 @@ web3formsKey: 'YOUR_WEB3FORMS_ACCESS_KEY',  // récupérée sur https://web3form
 ### 2. **Domaine final** → `app/lib/config.js` (`baseUrl`)
 
 ```js
-baseUrl: 'https://pratenzo.fr',  // remplacer si différent
+baseUrl: 'https://enzoprat.fr',  // remplacer si différent
 ```
 
 Cela met automatiquement à jour les canonical, OG, sitemap, JSON-LD, etc.
@@ -123,11 +123,11 @@ vercel --prod
 ## 🌐 Connecter le domaine OVH
 
 ### Côté Vercel
-- Project → Settings → Domains → ajouter `pratenzo.fr` + `www.pratenzo.fr`
+- Project → Settings → Domains → ajouter `enzoprat.fr` + `www.enzoprat.fr`
 
 ### Côté OVH (manager.ovh.com)
 - Zone DNS du domaine
-- Pour `pratenzo.fr` (apex) : enregistrement **A** → `76.76.21.21`
+- Pour `enzoprat.fr` (apex) : enregistrement **A** → `76.76.21.21`
 - Pour `www` : enregistrement **CNAME** → `cname.vercel-dns.com.`
 
 Certificat SSL Let's Encrypt émis automatiquement par Vercel.
@@ -137,9 +137,9 @@ Certificat SSL Let's Encrypt émis automatiquement par Vercel.
 ## 🔧 Google Search Console
 
 1. Aller sur [search.google.com/search-console](https://search.google.com/search-console)
-2. Ajouter la propriété `https://pratenzo.fr`
+2. Ajouter la propriété `https://enzoprat.fr`
 3. Validation : ajouter une balise `<meta name="google-site-verification" content="...">` dans `app/layout.jsx` (champ `verification.google`), puis push
-4. Soumettre le sitemap : `https://pratenzo.fr/sitemap.xml`
+4. Soumettre le sitemap : `https://enzoprat.fr/sitemap.xml`
 5. Demander l'indexation de la homepage et des pages prioritaires (Bordeaux, services principaux)
 
 ---
@@ -202,7 +202,7 @@ import Script from 'next/script';
 1. Créer une fiche pour **Prat Enzo** sur [business.google.com](https://business.google.com)
 2. Catégorie : **Concepteur de site web** (ou Webdesigner)
 3. Zone d'intervention : **Bordeaux et environs** (cocher « Je livre des biens et services à mes clients »)
-4. Site web : `https://pratenzo.fr` (ou `https://pratenzo.fr/creation-site-internet-bordeaux`)
+4. Site web : `https://enzoprat.fr` (ou `https://enzoprat.fr/creation-site-internet-bordeaux`)
 5. Description cohérente avec le site
 6. Ajouter les services principaux comme « Services proposés »
 

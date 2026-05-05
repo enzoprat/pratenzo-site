@@ -24,7 +24,7 @@ export default function ServicesPage() {
     itemListElement: services.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `https://pratenzo.fr/services/${s.slug}`,
+      url: `https://enzoprat.fr/services/${s.slug}`,
       name: s.title
     }))
   };

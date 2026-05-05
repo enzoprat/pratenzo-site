@@ -137,7 +137,7 @@ export default function Hero() {
           >
             <div className="mockup__bar">
               <span /><span /><span />
-              <div className="mockup__url">pratenzo.fr</div>
+              <div className="mockup__url">enzoprat.fr</div>
             </div>
             <div className="mockup__body">
               <div className="mockup__hero">

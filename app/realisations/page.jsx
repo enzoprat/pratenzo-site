@@ -31,7 +31,7 @@ export default function RealisationsPage() {
     itemListElement: realisations.map((r, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `https://pratenzo.fr/realisations/${r.slug}`,
+      url: `https://enzoprat.fr/realisations/${r.slug}`,
       name: r.name
     }))
   };

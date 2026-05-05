@@ -7,8 +7,8 @@
 export const config = {
   // Identité
   brandName: 'Prat Enzo',
-  domain: 'pratenzo.fr',
-  baseUrl: 'https://pratenzo.fr',
+  domain: 'enzoprat.fr',
+  baseUrl: 'https://enzoprat.fr',
 
   // ⚠️ Téléphone affiché sur le site
   phone: '+33769108140',
