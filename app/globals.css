@@ -59,8 +59,6 @@ html, body, #root {
 html {
   scroll-behavior: auto;
   overflow-x: hidden;
-  width: 100%;
-  max-width: 100vw;
 }
 
 body {
@@ -68,16 +66,15 @@ body {
   line-height: 1.6;
   letter-spacing: -0.01em;
   overflow-x: hidden;
-  width: 100%;
-  max-width: 100vw;
   background: var(--bg);
   position: relative;
+  /* Ne pas mettre max-width:100vw qui peut clipper avec les paddings */
 }
 
-/* Force le main et sections à respecter le viewport */
-main, header, footer {
-  max-width: 100vw;
-  overflow-x: clip;
+/* Force le contenu textuel à wrap (évite les overflow horizontaux sur mobile) */
+h1, h2, h3, h4, p, li {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* Prévention zoom iOS au focus input (font-size < 16px déclenche zoom) */
@@ -87,6 +84,11 @@ main, header, footer {
   select {
     font-size: 16px !important;
   }
+
+  /* H1 plus contraint sur petit écran */
+  h1 { font-size: clamp(1.9rem, 8vw, 2.6rem); letter-spacing: -0.03em; }
+  .page-hero h1 { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+  .hero h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
 }
 
 img { max-width: 100%; display: block; }
