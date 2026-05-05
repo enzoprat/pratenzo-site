@@ -171,9 +171,18 @@ p  { margin: 0 0 1em; color: var(--muted); }
   box-shadow: 0 8px 24px var(--glow-soft), inset 0 1px 0 rgba(255,255,255,0.2);
 }
 @media (max-width: 768px) {
-  .mobile-cta { display: flex; }
-  /* Padding bottom du body pour compenser */
-  body { padding-bottom: 84px; }
+  .mobile-cta {
+    display: flex;
+    bottom: max(16px, env(safe-area-inset-bottom));
+  }
+  /* Padding bottom du body pour compenser la CTA fixe */
+  body {
+    padding-bottom: calc(110px + env(safe-area-inset-bottom));
+  }
+  html {
+    /* Anchor scrolls (#section) prennent en compte la CTA */
+    scroll-padding-bottom: 110px;
+  }
 }
 
 /* ===== Contextual section pops ===== */

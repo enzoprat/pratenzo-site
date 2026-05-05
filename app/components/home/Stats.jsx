@@ -23,7 +23,7 @@ export default function Stats() {
           <div className="stats">
             <div className="stat">
               <span className="stat__num">
-                <Counter to={7} suffix="+" />
+                <Counter to={82} suffix="+" />
               </span>
               <div className="stat__label">Sites professionnels en ligne</div>
             </div>
@@ -35,7 +35,7 @@ export default function Stats() {
             </div>
             <div className="stat">
               <span className="stat__num">
-                <Counter to={48} suffix="h" />
+                <Counter to={7} suffix="h" />
               </span>
               <div className="stat__label">Délai moyen de réponse</div>
             </div>
