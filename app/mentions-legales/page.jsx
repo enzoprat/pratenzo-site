@@ -28,10 +28,10 @@ export default function MentionsLegalesPage() {
             <h2>Éditeur du site</h2>
             <p>
               <strong>Prat Enzo</strong><br />
-              [Statut juridique à compléter]<br />
-              [Adresse à compléter]<br />
-              SIRET : [à compléter]<br />
-              Email : à demander via le formulaire de contact
+              Auto-entrepreneur<br />
+              SIRET : 911 941 870 00014<br />
+              Téléphone : 07 69 10 81 40<br />
+              Contact : via le formulaire du site
             </p>
 
             <h2>Responsable de la publication</h2>

@@ -11,8 +11,8 @@ export const config = {
   baseUrl: 'https://pratenzo.fr',
 
   // ⚠️ Téléphone affiché sur le site
-  phone: '+33 0 00 00 00 00',
-  phoneDisplay: '+33 0 00 00 00 00',
+  phone: '+33769108140',
+  phoneDisplay: '07 69 10 81 40',
 
   /*
    * 🔑 Web3Forms — où arrivent les demandes du formulaire
@@ -24,7 +24,7 @@ export const config = {
    * L'email "enzoprat@icloud.com" est uniquement utilisé côté Web3Forms
    * et n'est JAMAIS exposé sur le site public.
    */
-  web3formsKey: 'YOUR_WEB3FORMS_ACCESS_KEY',
+  web3formsKey: 'd259524d-b71d-4bb4-a26f-60455a488c9a',
   web3formsSubject: 'Nouvelle demande Prat Enzo',
 
   // Liens externes optionnels
