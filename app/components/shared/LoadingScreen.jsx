@@ -20,7 +20,7 @@ export default function LoadingScreen() {
       setShow(false);
       sessionStorage.setItem('siteweb33_intro', '1');
       document.body.style.overflow = '';
-    }, 2200);
+    }, 1400);
     return () => {
       clearTimeout(t);
       document.body.style.overflow = '';

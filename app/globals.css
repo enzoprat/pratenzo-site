@@ -1062,7 +1062,8 @@ p  { margin: 0 0 1em; color: var(--muted); }
 .hero__trust {
   display: flex;
   align-items: center;
-  gap: 14px;
+  flex-wrap: wrap;
+  gap: 8px 14px;
   font-size: 0.85rem;
   color: var(--muted);
 }
@@ -3463,6 +3464,41 @@ p  { margin: 0 0 1em; color: var(--muted); }
   .cta-banner__actions { gap: 14px; }
   .faq-item__q { padding: 18px 20px; }
   .faq-item__a { padding: 0 20px 18px; }
+
+  /* === Réductions paddings cards mobile pour éviter sensation de coupure === */
+  .persona-detail__inner { padding: 28px 22px; }
+  .persona-detail__head h3 { font-size: 1.3rem; }
+  .persona-detail__pitch { font-size: 0.97rem; }
+  .detail-block { padding: 22px 20px; }
+  .detail-block h2 { font-size: 1.1rem; }
+  .faq-side__inner { padding: 28px 22px; }
+  .faq-side h2 { font-size: 1.45rem; }
+  .faq-side__card { padding: 20px 18px; }
+  .checklist { padding: 24px 20px; }
+  .why-quote { padding: 22px 20px; font-size: 1rem; }
+  .services-panel__copy, .services-panel__features { padding: 28px 22px; }
+  .services-panel__copy h3 { font-size: 1.55rem; }
+  .process-step { padding: 28px 22px; }
+  .options-feature { padding: 28px 22px; }
+  .options-feature h2 { font-size: 1.6rem; }
+  .options-feature p { font-size: 0.95rem; }
+  .options-cloud { padding: 0; }
+  .maintenance-list li { padding: 12px 14px; font-size: 0.92rem; }
+
+  /* === Container plus serré === */
+  .container { padding: 0 18px; }
+
+  /* === MobileCTA plus discret + petit === */
+  .mobile-cta {
+    padding: 6px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.78);
+  }
+  .mobile-cta__call { width: 42px; height: 42px; }
+  .mobile-cta__main { padding: 12px 18px; font-size: 0.88rem; }
+
+  /* Padding-bottom mis à jour pour la nouvelle taille du CTA */
+  body { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
 }
 
 @media (max-width: 480px) {
