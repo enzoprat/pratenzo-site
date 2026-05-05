@@ -16,28 +16,28 @@ const popsConfig = [
     icon: Sparkles,
     title: 'Prat Enzo',
     msg: 'Nouvelle demande reçue à l\u2019instant',
-    iconColor: '#22C55E'
+    iconColor: '#8B5CF6'
   },
   {
     sectionId: 'services',
     icon: Eye,
     title: 'Activité',
     msg: 'Site visité 12 fois cette heure',
-    iconColor: '#10B981'
+    iconColor: '#22D3EE'
   },
   {
     sectionId: 'realisations',
     icon: Globe2,
     title: 'Mise en ligne',
     msg: 'Nouveau site livré cette semaine',
-    iconColor: '#22C55E'
+    iconColor: '#8B5CF6'
   },
   {
     sectionId: 'process',
     icon: Rocket,
     title: 'Projet validé',
     msg: 'Démarrage prévu lundi prochain',
-    iconColor: '#22C55E'
+    iconColor: '#8B5CF6'
   },
   {
     sectionId: 'faq',
@@ -51,7 +51,7 @@ const popsConfig = [
     icon: Phone,
     title: 'Nouvel appel',
     msg: 'Un client vient d\u2019être recontacté',
-    iconColor: '#22C55E'
+    iconColor: '#8B5CF6'
   }
 ];
 

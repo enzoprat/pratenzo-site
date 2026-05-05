@@ -10,7 +10,7 @@ export default function NotFound() {
   return (
     <main className="thanks">
       <div>
-        <div className="thanks__icon" style={{ background: 'linear-gradient(135deg, #14532D, #16A34A)' }}>
+        <div className="thanks__icon" style={{ background: 'linear-gradient(135deg, #312E81, #4F46E5)' }}>
           <span style={{ fontWeight: 800, fontSize: '1.8rem' }}>404</span>
         </div>
         <h1>Page introuvable</h1>

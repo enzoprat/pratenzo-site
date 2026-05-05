@@ -69,7 +69,7 @@ export default function DotGrid({ spacing = 40, radius = 1.5, glowRadius = 130 }
 
         ctx.beginPath();
         ctx.arc(d.x, d.y, size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(74, 222, 128, ${alpha})`;
+        ctx.fillStyle = `rgba(129, 140, 248, ${alpha})`;
         ctx.fill();
       }
       raf = requestAnimationFrame(render);
