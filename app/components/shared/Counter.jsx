@@ -25,7 +25,7 @@ export default function Counter({ to = 100, duration = 1800, suffix = '', prefix
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.1, rootMargin: '0px 0px -10% 0px' }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
