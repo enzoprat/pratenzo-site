@@ -45,7 +45,7 @@ export default function Maintenance() {
               </ul>
 
               <div className="maintenance-cta">
-                <MagneticButton className="magnetic--primary" href="#contact">
+                <MagneticButton className="magnetic--primary" href="/contact">
                   Demander un accompagnement <ArrowRight size={16} />
                 </MagneticButton>
                 <p className="maintenance-note">

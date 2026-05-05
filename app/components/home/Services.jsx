@@ -160,7 +160,7 @@ export default function Services() {
                     <strong>{current.forWho}</strong>
                   </div>
 
-                  <MagneticButton className="magnetic--primary" href="#contact">
+                  <MagneticButton className="magnetic--primary" href="/contact">
                     Demander un devis <ArrowRight size={16} />
                   </MagneticButton>
                 </div>

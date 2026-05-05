@@ -1,17 +1,25 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Phone } from 'lucide-react';
 import { config } from '@/app/lib/config';
 
-/* CTA flottante en bas d'écran sur mobile, après le hero */
+/* CTA flottante en bas d'écran sur mobile, après le hero. Cachée sur /contact, /merci. */
 export default function MobileCTA() {
+  const pathname = usePathname();
   const [visible, setVisible] = useState(false);
+  const hideOnRoutes = ['/contact', '/merci'];
 
   useEffect(() => {
+    if (hideOnRoutes.includes(pathname)) {
+      setVisible(false);
+      return;
+    }
     const onScroll = () => {
-      const passed = window.scrollY > window.innerHeight * 0.7;
+      const passed = window.scrollY > window.innerHeight * 0.5;
       const inForm = document.querySelector('#form')?.getBoundingClientRect();
       const nearForm = inForm && inForm.top < window.innerHeight - 100 && inForm.bottom > 0;
       setVisible(passed && !nearForm);
@@ -19,7 +27,7 @@ export default function MobileCTA() {
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [pathname]);
 
   return (
     <AnimatePresence>
@@ -38,9 +46,9 @@ export default function MobileCTA() {
           >
             <Phone size={18} />
           </a>
-          <a href="#contact" className="mobile-cta__main">
+          <Link href="/contact" className="mobile-cta__main">
             Demander mon site <ArrowRight size={16} />
-          </a>
+          </Link>
         </motion.div>
       )}
     </AnimatePresence>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Hammer, User, Store, Briefcase, ShoppingCart,
@@ -226,9 +227,9 @@ export default function ForWho() {
                       <div className="persona-detail__cta-label">Solution recommandée</div>
                       <div className="persona-detail__cta-value">{current.suggested}</div>
                     </div>
-                    <a href="#contact" className="btn btn--primary">
+                    <Link href="/contact" className="btn btn--primary">
                       Démarrer mon projet <ArrowRight size={16} />
-                    </a>
+                    </Link>
                   </div>
                 </motion.div>
               </AnimatePresence>

@@ -39,7 +39,7 @@ export default function Options() {
                 accompagnement régulier.
               </p>
               <div className="options-feature__cta">
-                <MagneticButton className="magnetic--primary" href="#contact">
+                <MagneticButton className="magnetic--primary" href="/contact">
                   Composer mon projet <Plus size={16} />
                 </MagneticButton>
               </div>

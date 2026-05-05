@@ -85,7 +85,7 @@ export default function FAQ() {
                   <p className="faq-side__desc">
                     Décrivez votre projet, nous vous répondons sous 48h ouvrées.
                   </p>
-                  <MagneticButton className="magnetic--primary" href="#contact">
+                  <MagneticButton className="magnetic--primary" href="/contact">
                     Nous contacter <ArrowRight size={16} />
                   </MagneticButton>
                 </div>
