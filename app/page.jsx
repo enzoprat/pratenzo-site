@@ -17,9 +17,9 @@ import FAQ from './components/home/FAQ';
 import ContactForm from './components/forms/ContactForm';
 
 export const metadata = buildMetadata({
-  title: 'Création site internet Bordeaux | Sites vitrines, Shopify & e-commerce | Prat Enzo',
+  title: 'Création site internet Bordeaux | Prat Enzo',
   description:
-    "Prat Enzo crée des sites internet modernes à Bordeaux : sites vitrines, e-commerce Shopify et click & collect pour artisans, commerces, indépendants et entreprises locales.",
+    "Création de sites vitrines, Shopify et click & collect à Bordeaux. Pour artisans, commerces, indépendants et entreprises locales en Gironde.",
   path: '/',
   image: '/og-image.png'
 });

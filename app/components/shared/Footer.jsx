@@ -24,11 +24,12 @@ export default function Footer() {
           <div>
             <h4>Services</h4>
             <ul>
-              <li><Link href="/services/site-vitrine-bordeaux">Site vitrine Bordeaux</Link></li>
-              <li><Link href="/services/site-ecommerce-shopify-bordeaux">Site Shopify Bordeaux</Link></li>
+              <li><Link href="/services/site-vitrine-bordeaux">Création site vitrine Bordeaux</Link></li>
+              <li><Link href="/services/site-ecommerce-shopify-bordeaux">Création site Shopify Bordeaux</Link></li>
               <li><Link href="/services/click-and-collect-bordeaux">Click & collect Bordeaux</Link></li>
-              <li><Link href="/services/refonte-site-internet-bordeaux">Refonte de site</Link></li>
-              <li><Link href="/site-internet-artisan-bordeaux">Site artisan Bordeaux</Link></li>
+              <li><Link href="/services/refonte-site-internet-bordeaux">Refonte site internet</Link></li>
+              <li><Link href="/site-internet-artisan-bordeaux">Site internet artisan Bordeaux</Link></li>
+              <li><Link href="/seo-bordeaux">SEO Bordeaux</Link></li>
             </ul>
           </div>
 
@@ -36,8 +37,11 @@ export default function Footer() {
             <h4>Zones desservies</h4>
             <ul>
               <li><Link href="/creation-site-internet-bordeaux">Bordeaux</Link></li>
+              <li><Link href="/creation-site-internet-merignac">Mérignac</Link></li>
+              <li><Link href="/creation-site-internet-pessac">Pessac</Link></li>
               <li><Link href="/creation-site-internet-gironde">Gironde</Link></li>
               <li><Link href="/agence-web-bordeaux">Agence web Bordeaux</Link></li>
+              <li><Link href="/seo-bordeaux">SEO Bordeaux</Link></li>
               <li><Link href="/secteurs">Secteurs accompagnés</Link></li>
             </ul>
           </div>

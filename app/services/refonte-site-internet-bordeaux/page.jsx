@@ -2,7 +2,8 @@ import {
   buildMetadata,
   buildServiceSchema,
   buildBreadcrumbSchema,
-  buildWebPageSchema
+  buildWebPageSchema,
+  buildFaqSchema
 } from '@/app/lib/seo';
 import { getServiceBySlug } from '@/app/lib/data/services';
 import JsonLd from '@/app/components/seo/JsonLd';
@@ -73,10 +74,11 @@ export default function RefonteBordeauxPage() {
     slug: 'refonte-site-internet-bordeaux'
   });
   const bc = buildBreadcrumbSchema(breadcrumb);
+  const faq = content.faq ? buildFaqSchema(content.faq) : null;
 
   return (
     <>
-      <JsonLd data={[wp, svc, bc]} />
+      <JsonLd data={[wp, svc, bc, faq].filter(Boolean)} />
       <PageShell
         breadcrumb={breadcrumb}
         eyebrow="Service · Refonte"

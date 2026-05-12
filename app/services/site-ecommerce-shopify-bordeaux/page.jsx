@@ -2,7 +2,8 @@ import {
   buildMetadata,
   buildServiceSchema,
   buildBreadcrumbSchema,
-  buildWebPageSchema
+  buildWebPageSchema,
+  buildFaqSchema
 } from '@/app/lib/seo';
 import { getServiceBySlug } from '@/app/lib/data/services';
 import { realisations } from '@/app/lib/data/realisations';
@@ -74,10 +75,11 @@ export default function SiteShopifyBordeauxPage() {
     slug: 'site-ecommerce-shopify-bordeaux'
   });
   const bc = buildBreadcrumbSchema(breadcrumb);
+  const faq = buildFaqSchema(content.faq);
 
   return (
     <>
-      <JsonLd data={[wp, svc, bc]} />
+      <JsonLd data={[wp, svc, bc, faq]} />
       <PageShell
         breadcrumb={breadcrumb}
         eyebrow="Service · E-commerce Shopify"

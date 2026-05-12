@@ -2,6 +2,13 @@ import { config } from './config';
 
 const SITE_URL = config.baseUrl;
 
+/* Normalise un title : string OU { absolute: '...' } (format Next.js) → string */
+function asTitleString(title) {
+  if (typeof title === 'string') return title;
+  if (title && typeof title === 'object' && title.absolute) return title.absolute;
+  return String(title || '');
+}
+
 /* Helper : génère les metadata Next.js pour une page */
 export function buildMetadata({
   title,
@@ -133,7 +140,7 @@ export function buildWebPageSchema({ path, title, description }) {
     '@type': 'WebPage',
     '@id': `${url}#webpage`,
     url,
-    name: title,
+    name: asTitleString(title),
     description,
     inLanguage: 'fr-FR',
     isPartOf: { '@id': `${SITE_URL}/#website` },
@@ -191,7 +198,7 @@ export function buildCollectionSchema({ path, title, description }) {
     '@type': 'CollectionPage',
     '@id': `${url}#collection`,
     url,
-    name: title,
+    name: asTitleString(title),
     description,
     inLanguage: 'fr-FR',
     isPartOf: { '@id': `${SITE_URL}/#website` }
@@ -220,7 +227,7 @@ export function buildAboutSchema({ path, title, description }) {
     '@type': 'AboutPage',
     '@id': `${url}#about`,
     url,
-    name: title,
+    name: asTitleString(title),
     description,
     mainEntity: { '@id': `${SITE_URL}/#person` },
     inLanguage: 'fr-FR'
@@ -235,7 +242,7 @@ export function buildContactSchema({ path, title, description }) {
     '@type': 'ContactPage',
     '@id': `${url}#contact`,
     url,
-    name: title,
+    name: asTitleString(title),
     description,
     inLanguage: 'fr-FR',
     isPartOf: { '@id': `${SITE_URL}/#website` }

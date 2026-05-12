@@ -2,7 +2,8 @@ import {
   buildMetadata,
   buildServiceSchema,
   buildBreadcrumbSchema,
-  buildWebPageSchema
+  buildWebPageSchema,
+  buildFaqSchema
 } from '@/app/lib/seo';
 import { getServiceBySlug } from '@/app/lib/data/services';
 import { realisations } from '@/app/lib/data/realisations';
@@ -79,10 +80,11 @@ export default function SiteVitrineBordeauxPage() {
     slug: 'site-vitrine-bordeaux'
   });
   const bc = buildBreadcrumbSchema(breadcrumb);
+  const faq = content.faq ? buildFaqSchema(content.faq) : null;
 
   return (
     <>
-      <JsonLd data={[wp, svc, bc]} />
+      <JsonLd data={[wp, svc, bc, faq].filter(Boolean)} />
       <PageShell
         breadcrumb={breadcrumb}
         eyebrow="Service · Site vitrine"

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Globe, ShoppingBag, Package, Check, ArrowRight,
@@ -14,6 +15,8 @@ const services = [
     id: 'vitrine',
     icon: Globe,
     title: 'Site vitrine',
+    detailHref: '/services/site-vitrine-bordeaux',
+    detailLabel: 'Voir la page « Création site vitrine Bordeaux »',
     tagline: 'Votre activité présentée avec clarté',
     desc:
       "Un site clair, moderne et professionnel pour présenter votre entreprise, vos services et faciliter les demandes de contact. La référence pour les artisans, indépendants et commerces.",
@@ -36,6 +39,8 @@ const services = [
     id: 'shopify',
     icon: ShoppingBag,
     title: 'E-commerce Shopify',
+    detailHref: '/services/site-ecommerce-shopify-bordeaux',
+    detailLabel: 'Voir la page « Création site Shopify Bordeaux »',
     tagline: 'Une boutique professionnelle, prête à vendre',
     desc:
       "Une boutique en ligne professionnelle pour vendre vos produits, structurer votre catalogue et offrir une expérience d'achat fluide. La plateforme la plus fiable du marché.",
@@ -58,6 +63,8 @@ const services = [
     id: 'cc',
     icon: Package,
     title: 'Click & collect',
+    detailHref: '/services/click-and-collect-bordeaux',
+    detailLabel: 'Voir la page « Click & collect Bordeaux »',
     tagline: 'Commande en ligne, retrait sur place',
     desc:
       "Une solution pratique pour permettre à vos clients de commander en ligne et récupérer sur place. Idéal pour les commerces de proximité qui veulent fluidifier leur service.",
@@ -160,9 +167,26 @@ export default function Services() {
                     <strong>{current.forWho}</strong>
                   </div>
 
-                  <MagneticButton className="magnetic--primary" href="/contact">
-                    Demander un devis <ArrowRight size={16} />
-                  </MagneticButton>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, alignItems: 'center' }}>
+                    <MagneticButton className="magnetic--primary" href="/contact">
+                      Demander un devis <ArrowRight size={16} />
+                    </MagneticButton>
+                    {current.detailHref && (
+                      <Link
+                        href={current.detailHref}
+                        style={{
+                          color: 'var(--primary)',
+                          fontWeight: 600,
+                          fontSize: '0.92rem',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: 6
+                        }}
+                      >
+                        {current.detailLabel} <ArrowRight size={14} />
+                      </Link>
+                    )}
+                  </div>
                 </div>
 
                 {/* Côté droit : liste features avec checks */}
