@@ -7,8 +7,15 @@
 export const config = {
   // Identité
   brandName: 'Prat Enzo',
-  domain: 'enzoprat.fr',
-  baseUrl: 'https://enzoprat.fr',
+  // Domaine canonique : www.enzoprat.fr
+  // Vercel redirige déjà apex (enzoprat.fr) vers www en 307, et la majorité
+  // des pages déjà indexées par Google sont sur www. Aligner le code sur www
+  // supprime le signal contradictoire (canonical apex vs hôte servi en www) qui
+  // provoquait les "Erreur liée à des redirections" dans Search Console.
+  // À faire côté Vercel : confirmer www.enzoprat.fr comme "Primary Domain"
+  // (Settings → Domains), ce qui transforme automatiquement le 307 en 308.
+  domain: 'www.enzoprat.fr',
+  baseUrl: 'https://www.enzoprat.fr',
 
   // ⚠️ Téléphone affiché sur le site
   phone: '+33769108140',

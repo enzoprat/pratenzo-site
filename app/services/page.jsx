@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { buildMetadata, buildWebPageSchema, buildBreadcrumbSchema } from '@/app/lib/seo';
 import { services } from '@/app/lib/data/services';
+import { config } from '@/app/lib/config';
 import JsonLd from '@/app/components/seo/JsonLd';
 import PageShell from '@/app/components/shared/PageShell';
 import CtaBlock from '@/app/components/shared/CtaBlock';
@@ -24,7 +25,7 @@ export default function ServicesPage() {
     itemListElement: services.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `https://enzoprat.fr/services/${s.slug}`,
+      url: `${config.baseUrl}/services/${s.slug}`,
       name: s.title
     }))
   };

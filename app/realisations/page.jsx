@@ -6,6 +6,7 @@ import {
   buildBreadcrumbSchema
 } from '@/app/lib/seo';
 import { realisations } from '@/app/lib/data/realisations';
+import { config } from '@/app/lib/config';
 import JsonLd from '@/app/components/seo/JsonLd';
 import PageShell from '@/app/components/shared/PageShell';
 import CtaBlock from '@/app/components/shared/CtaBlock';
@@ -31,7 +32,7 @@ export default function RealisationsPage() {
     itemListElement: realisations.map((r, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `https://enzoprat.fr/realisations/${r.slug}`,
+      url: `${config.baseUrl}/realisations/${r.slug}`,
       name: r.name
     }))
   };

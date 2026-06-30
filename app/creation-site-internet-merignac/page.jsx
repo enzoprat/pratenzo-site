@@ -10,9 +10,13 @@ import PageShell from '@/app/components/shared/PageShell';
 import CtaBlock from '@/app/components/shared/CtaBlock';
 
 export const metadata = buildMetadata({
-  title: 'Création site internet Mérignac | Sites pour artisans et commerces | Prat Enzo',
+  // Title optimisé CTR : ancien title (80 car) était tronqué dans la SERP.
+  // Nouveau title : 58 caractères, "Mérignac" en première position, cible
+  // artisans et pros qui dominent les recherches locales sur la ville.
+  // (buildMetadata utilise title.absolute, donc pas de suffixe " | Prat Enzo".)
+  title: 'Création de site internet à Mérignac pour artisans et pros',
   description:
-    "Création de sites internet à Mérignac : vitrines, e-commerce et click & collect pour artisans, indépendants et commerces locaux.",
+    "Création de site internet à Mérignac : vitrine, e-commerce ou click & collect. Pour artisans, commerces et pros locaux. Devis clair et SEO local optimisé.",
   path: '/creation-site-internet-merignac'
 });
 

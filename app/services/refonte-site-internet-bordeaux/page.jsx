@@ -14,7 +14,10 @@ import CtaBlock from '@/app/components/shared/CtaBlock';
 const service = getServiceBySlug('refonte-site-internet-bordeaux');
 
 export const metadata = buildMetadata({
-  title: 'Refonte site internet Bordeaux | Moderniser votre site pro',
+  // Title optimisé CTR : promesse rassurante "sans perdre votre SEO" en réponse
+  // à la peur n°1 lors d'une refonte (perdre les positions Google déjà acquises).
+  // 56 caractères, intention locale claire.
+  title: 'Refonte de site internet à Bordeaux sans perdre votre SEO',
   description: service.metaDescription,
   path: '/services/refonte-site-internet-bordeaux'
 });

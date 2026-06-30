@@ -91,7 +91,7 @@ export const services = [
     description:
       "Votre site actuel ne reflète plus votre activité, n'est pas responsive ou n'apparaît pas dans Google ? La refonte permet de moderniser le design, repenser la structure, améliorer les performances et préparer le SEO pour générer plus de demandes.",
     metaDescription:
-      "Refonte de site internet à Bordeaux : modernisation du design, structure, performances, responsive et SEO. Idéal pour relancer un site existant.",
+      "Refonte de site internet à Bordeaux : design moderne, version mobile, performances et SEO préservé. Sans casser vos positions Google ni perdre vos contenus.",
     forWho:
       "Entreprises, artisans, commerces et indépendants qui ont un site existant à moderniser ou à repenser.",
     items: [
