@@ -91,11 +91,14 @@ export default function CreationSiteMerignacPage() {
 
             <h2>Approche locale</h2>
             <p>
-              L'accompagnement couvre toute la Gironde — voir aussi <Link href="/creation-site-internet-bordeaux">Bordeaux</Link>
-              et <Link href="/creation-site-internet-gironde">Gironde</Link>. Le SEO local fait partie de la
-              démarche : page-ville dédiée, contenu mentionnant Mérignac et sa zone, balises adaptées et
-              maillage avec les pages services. Voir <Link href="/seo-bordeaux">SEO Bordeaux</Link> pour plus
-              de détails.
+              L'accompagnement couvre toute la Gironde. Voir aussi
+              <Link href="/creation-site-internet-bordeaux"> Bordeaux</Link>,
+              <Link href="/creation-site-internet-pessac"> Pessac</Link>,
+              <Link href="/creation-site-internet-arcachon"> Arcachon</Link> ou la page département
+              <Link href="/creation-site-internet-gironde"> Gironde</Link>. Le SEO local fait partie de
+              la démarche : page-ville dédiée, contenu mentionnant Mérignac et sa zone, balises adaptées
+              et maillage avec les pages services. Voir <Link href="/seo-bordeaux">SEO Bordeaux</Link> pour
+              plus de détails.
             </p>
 
             <h2>Questions fréquentes</h2>

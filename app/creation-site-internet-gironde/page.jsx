@@ -6,9 +6,11 @@ import PageShell from '@/app/components/shared/PageShell';
 import CtaBlock from '@/app/components/shared/CtaBlock';
 
 export const metadata = buildMetadata({
-  title: 'Création site internet Gironde | Sites pro vitrines & e-commerce | Prat Enzo',
+  // Title raccourci : 58 caractères, intention locale claire (Gironde + pros).
+  // L'ancien dépassait 80 caractères et était tronqué dans la SERP.
+  title: 'Création de site internet en Gironde pour artisans et pros',
   description:
-    "Création de sites internet en Gironde : sites vitrines, e-commerce et click & collect pour artisans, commerces et entreprises de tout le département.",
+    "Création de site internet partout en Gironde : vitrine, e-commerce ou click & collect. Pour artisans, commerces et entreprises de Bordeaux, du Bassin et du Médoc.",
   path: '/creation-site-internet-gironde'
 });
 
@@ -47,8 +49,10 @@ export default function CreationSiteInternetGirondePage() {
             <ul>
               {locations.map(l => (
                 <li key={l.slug}>
-                  {l.isPrimary ? (
-                    <Link href="/creation-site-internet-bordeaux">{l.name}</Link>
+                  {l.hasPage ? (
+                    <Link href={l.isPrimary ? '/creation-site-internet-bordeaux' : `/creation-site-internet-${l.slug}`}>
+                      {l.name}
+                    </Link>
                   ) : (
                     <span>{l.name}</span>
                   )}
@@ -56,9 +60,9 @@ export default function CreationSiteInternetGirondePage() {
               ))}
             </ul>
             <p>
-              Pour les communes individuelles, des pages dédiées sont en cours de création. En attendant, la zone
-              d'intervention couvre l'ensemble du département. Une intervention à distance est également possible pour
-              des projets en dehors de la Gironde.
+              Les villes avec un lien disposent d'une page locale dédiée. Pour les autres communes,
+              la zone d'intervention couvre l'ensemble du département. Une intervention à distance
+              est également possible pour des projets en dehors de la Gironde.
             </p>
 
             <h2>Spécificités d'un site pour la Gironde</h2>

@@ -10,9 +10,13 @@ import PageShell from '@/app/components/shared/PageShell';
 import CtaBlock from '@/app/components/shared/CtaBlock';
 
 export const metadata = buildMetadata({
-  title: 'Création site internet Pessac | Sites pour pros et artisans | Prat Enzo',
+  // Title optimisé : 57 caractères, suffixe " | Prat Enzo" retiré (l'ancien
+  // était dur-codé et créait un suffixe en double avec le template global).
+  // Couvre "création site internet pessac" et capte aussi "refonte site
+  // internet pessac" via la section dédiée plus bas dans la page.
+  title: 'Création de site internet à Pessac pour artisans et pros',
   description:
-    "Création de sites internet à Pessac : vitrines, e-commerce et click & collect pour artisans, indépendants et commerces de la commune et alentours.",
+    "Création et refonte de site internet à Pessac : vitrine, e-commerce ou click & collect pour artisans, commerces et pros locaux. SEO local et design soigné.",
   path: '/creation-site-internet-pessac'
 });
 
@@ -26,6 +30,10 @@ const cityFaq = [
   {
     q: 'Avez-vous des réalisations dans la zone de Pessac ?',
     a: "Plusieurs projets ont été livrés dans l'agglomération bordelaise. Voir la page Réalisations pour des exemples concrets, ou demander un projet similaire pour une activité comparable."
+  },
+  {
+    q: "Faites-vous aussi de la refonte de site à Pessac ?",
+    a: "Oui. Si vous avez déjà un site qui n'est plus à jour, pas responsive ou qui n'apparaît plus dans Google, une refonte permet de moderniser le design, repenser la structure et préserver le référencement existant grâce à des redirections propres. Le détail de la prestation est sur la page Refonte de site internet à Bordeaux."
   },
   {
     q: 'Combien coûte un site à Pessac ?',
@@ -63,6 +71,17 @@ export default function CreationSitePessacPage() {
               <li><Link href="/services/click-and-collect-bordeaux">Click & collect</Link> pour les commerces de proximité</li>
               <li><Link href="/services/refonte-site-internet-bordeaux">Refonte</Link> d'un site existant</li>
             </ul>
+
+            <h2>Refonte de site internet à Pessac</h2>
+            <p>
+              Si votre site actuel a quelques années, n'est pas responsive ou n'apparaît plus dans
+              Google, une refonte est souvent plus efficace qu'un nouveau site de zéro. La refonte
+              permet de moderniser le design, repenser la structure, améliorer les performances et
+              préserver le SEO acquis grâce à des redirections propres (301) des anciennes URLs vers
+              les nouvelles. La méthode est détaillée sur la page
+              <Link href="/services/refonte-site-internet-bordeaux"> Refonte de site internet à Bordeaux</Link>,
+              elle s'applique exactement de la même façon à Pessac.
+            </p>
 
             <h2>SEO local Pessac</h2>
             <p>

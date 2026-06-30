@@ -9,9 +9,11 @@ import PageShell from '@/app/components/shared/PageShell';
 import CtaBlock from '@/app/components/shared/CtaBlock';
 
 export const metadata = buildMetadata({
-  title: 'Création site internet Bordeaux | Sites pro vitrines & e-commerce | Prat Enzo',
+  // Title raccourci : 58 caractères, intention locale claire.
+  // L'ancien title dépassait 85 caractères et était tronqué dans la SERP.
+  title: 'Création de site internet à Bordeaux pour artisans et pros',
   description:
-    "Création de sites internet à Bordeaux : sites vitrines, e-commerce Shopify, click & collect et refonte. Pour artisans, indépendants, commerces et entreprises locales.",
+    "Création de site internet à Bordeaux : vitrine, e-commerce Shopify, click & collect et refonte. Pour artisans, commerces, indépendants et entreprises locales.",
   path: '/creation-site-internet-bordeaux'
 });
 
@@ -100,9 +102,20 @@ export default function CreationSiteInternetBordeauxPage() {
 
             <h2>Zones desservies depuis Bordeaux</h2>
             <p>
-              Au-delà de Bordeaux intra-muros, les projets sont également réalisés pour les communes de la métropole et
-              de tout le département : {locations.filter(l => !l.isPrimary).map(l => l.name).join(', ')}, ainsi que sur
-              l'ensemble de la <Link href="/creation-site-internet-gironde">Gironde</Link> et à distance selon les besoins.
+              Au-delà de Bordeaux intra-muros, les projets sont également réalisés pour les communes
+              de la métropole et de tout le département : {locations.filter(l => !l.isPrimary).map(l => l.name).join(', ')},
+              ainsi que sur l'ensemble de la <Link href="/creation-site-internet-gironde">Gironde</Link> et
+              à distance selon les besoins.
+            </p>
+            <p>
+              Pages locales dédiées disponibles pour
+              <Link href="/creation-site-internet-merignac"> Mérignac</Link>,
+              <Link href="/creation-site-internet-pessac"> Pessac</Link>,
+              <Link href="/creation-site-internet-arcachon"> Arcachon</Link>,
+              <Link href="/creation-site-internet-lege-cap-ferret"> Lège-Cap-Ferret</Link>,
+              <Link href="/creation-site-internet-ambares-et-lagrave"> Ambarès-et-Lagrave</Link>,
+              <Link href="/creation-site-internet-artigues-pres-bordeaux"> Artigues-près-Bordeaux</Link> et
+              <Link href="/creation-site-internet-marcheprime"> Marcheprime</Link>.
             </p>
 
             <h2>Questions fréquentes</h2>
