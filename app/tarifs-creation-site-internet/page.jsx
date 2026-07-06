@@ -48,12 +48,24 @@ export default function TarifsPage() {
       >
         <section className="container" style={{ paddingBottom: 60 }}>
           <div className="prose">
+            <h2>Un investissement, pas une dépense</h2>
+            <p>
+              Un site professionnel qui présente votre activité, rassure vos prospects et vous amène des demandes
+              qualifiées est un investissement de <strong>plusieurs milliers d'euros</strong>, pas un site à quelques
+              centaines d'euros bâclé sur un template générique. C'est ce niveau d'exigence qui distingue un site qui
+              travaille pour vous d'une simple présence en ligne oubliée.
+            </p>
+            <p>
+              L'objectif n'est pas d'être le moins cher : c'est de créer un site rentable, conçu sur mesure, qui
+              vous positionne au bon niveau face à vos concurrents et qui dure.
+            </p>
+
             <h2>Pourquoi pas de prix fixes affichés ?</h2>
             <p>
               Les sites « à partir de X € » sont rarement justes : ils créent soit une mauvaise surprise au moment du
               devis détaillé, soit un site bâclé pour respecter le prix d'appel. La création d'un site internet
               dépend de beaucoup de facteurs concrets, et un vrai devis demande quelques minutes de discussion sur le
-              projet.
+              projet. Vous savez exactement ce que vous payez, et pourquoi.
             </p>
 
             <h2>Les facteurs qui influencent le prix</h2>

@@ -91,7 +91,7 @@ export default function LoadingScreen() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.2 }}
           >
-            Agence de création de sites web
+            Concepteur web indépendant à Bordeaux
           </motion.div>
         </motion.div>
       )}

@@ -10,7 +10,7 @@ export default function Stats() {
       <div className="container">
         <Reveal>
           <div className="section__head">
-            <span className="section__eyebrow">L'agence en chiffres</span>
+            <span className="section__eyebrow">En chiffres</span>
             <h2>Une approche qualitative, pas quantitative</h2>
             <p>
               Chaque projet est traité avec le même niveau de soin, de la première

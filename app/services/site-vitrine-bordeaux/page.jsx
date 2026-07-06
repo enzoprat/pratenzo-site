@@ -28,7 +28,8 @@ const breadcrumb = [
 const content = {
   intro: [
     "Un site vitrine professionnel est aujourd'hui le minimum pour exister en ligne à Bordeaux et en Gironde. La majorité des prospects qui découvrent une activité artisanale, un commerce local ou un indépendant passent d'abord par Google, les réseaux sociaux ou une fiche Google Business. Sans support clair à partager, vous perdez en crédibilité et en demandes.",
-    "Le site vitrine Prat Enzo est conçu pour répondre à un seul objectif : transformer un prospect curieux en demande de contact qualifiée. Présentation de votre activité, mise en avant des prestations, photos des réalisations, zones d'intervention et formulaire de contact intégré."
+    "Le site vitrine Prat Enzo est conçu pour répondre à un seul objectif : transformer un prospect curieux en demande de contact qualifiée. Présentation de votre activité, mise en avant des prestations, photos des réalisations, zones d'intervention et formulaire de contact intégré.",
+    "Vous travaillez directement avec le concepteur du site, sans intermédiaire ni junior. Un site sur mesure, développé avec une stack moderne rapide et bien référencée, pensé comme un investissement rentable plutôt qu'un site low-cost jetable."
   ],
   process: [
     "Le projet démarre par une analyse de votre activité, vos cibles et vos objectifs. La structure du site est ensuite définie, les contenus organisés, le design créé puis intégré, et le tout mis en ligne après validation.",
@@ -49,7 +50,7 @@ const content = {
     },
     {
       q: 'Combien coûte la création d\u2019un site vitrine ?',
-      a: "Le tarif dépend du type de site, du nombre de pages, du contenu à intégrer et des fonctionnalités souhaitées. Une estimation peut être proposée après analyse du projet."
+      a: "Un site vitrine professionnel conçu pour générer des demandes représente un investissement de plusieurs milliers d'euros, pas un site à quelques centaines d'euros. Le tarif exact dépend du nombre de pages, du contenu à intégrer et des fonctionnalités souhaitées. Une estimation gratuite est proposée après analyse du projet."
     }
   ],
   relatedServices: [

@@ -78,11 +78,26 @@ export default function CreationSiteInternetBordeauxPage() {
               locales, les zones desservies et le SEO local sont pris en compte dès la conception du site.
             </p>
 
+            <h2>Un interlocuteur unique, pas une agence anonyme</h2>
+            <p>
+              Vous échangez directement avec la personne qui conçoit votre site, du premier appel à la mise en ligne.
+              Pas de commercial qui vend puis disparaît, pas de junior à qui le projet est refilé, pas de coûts gonflés
+              par une structure lourde. Un seul interlocuteur qui connaît votre projet, répond vite et reste joignable
+              après la livraison.
+            </p>
+            <p>
+              Les sites sont développés avec une stack moderne (Next.js) pensée pour la vitesse, le référencement et les
+              Core Web Vitals — un vrai avantage face aux sites WordPress lourds qui pénalisent souvent la visibilité et
+              l'expérience mobile.
+            </p>
+
             <h2>Tarifs et délais</h2>
             <p>
-              Le tarif dépend du type de site, du nombre de pages, du contenu à intégrer et des fonctionnalités
-              souhaitées. Une <Link href="/tarifs-creation-site-internet">estimation détaillée</Link> peut être proposée
-              après analyse du projet. Aucun frais caché : ce qui est convenu au départ est ce qui sera facturé.
+              Un site professionnel conçu pour générer des demandes représente un investissement de plusieurs milliers
+              d'euros, pas un site low-cost jetable. Le tarif exact dépend du type de site, du nombre de pages, du contenu
+              à intégrer et des fonctionnalités souhaitées. Une
+              <Link href="/tarifs-creation-site-internet"> estimation détaillée</Link> est proposée gratuitement après
+              analyse du projet. Aucun frais caché : ce qui est convenu au départ est ce qui sera facturé.
             </p>
 
             <h2>Réalisations à Bordeaux et en Gironde</h2>

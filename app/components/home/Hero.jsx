@@ -49,7 +49,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.05 }}
           >
-            <span className="dot" /> Agence en activité — disponible pour vos projets
+            <span className="dot" /> Concepteur web indépendant à Bordeaux — réponse sous 24h
           </motion.span>
 
           {/* H1 mask reveal — chaque mot dans son masque */}
