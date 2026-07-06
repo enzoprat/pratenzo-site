@@ -143,7 +143,7 @@ export default function ContactForm({ onSuccess }) {
                   et prêt à être partagé.
                 </h2>
                 <p>
-                  Envoyez votre demande, nous revenons vers vous rapidement avec un
+                  Envoyez votre demande, je reviens vers vous rapidement avec un
                   premier échange et une estimation adaptée à votre projet.
                 </p>
                 <div className="cta-banner__actions">
@@ -170,7 +170,7 @@ export default function ContactForm({ onSuccess }) {
                 <h2>Parlons de votre projet</h2>
                 <p>
                   4 étapes courtes, moins d'une minute. Plus vous donnez
-                  d'informations, plus notre première réponse sera précise.
+                  d'informations, plus ma première réponse sera précise.
                 </p>
                 <ul>
                   <li><MessageSquare size={18} /> <a href="#form">Via le formulaire ci-contre</a></li>
@@ -182,11 +182,11 @@ export default function ContactForm({ onSuccess }) {
                   <div className="contact-info__why-title">Ce qui se passe ensuite</div>
                   <div className="contact-info__step">
                     <span>1</span>
-                    <div>Nous étudions votre demande et clarifions vos besoins par mail.</div>
+                    <div>J'étudie votre demande et clarifie vos besoins par mail.</div>
                   </div>
                   <div className="contact-info__step">
                     <span>2</span>
-                    <div>Nous vous proposons une approche et une estimation adaptée.</div>
+                    <div>Je vous propose une approche et une estimation adaptée.</div>
                   </div>
                   <div className="contact-info__step">
                     <span>3</span>
@@ -393,7 +393,7 @@ export default function ContactForm({ onSuccess }) {
                         <div className="wizard-head">
                           <div className="wizard-eyebrow">Étape 4 / 4</div>
                           <h3>Votre message</h3>
-                          <p>Parlez-nous librement de votre projet, vos attentes, vos questions.</p>
+                          <p>Parlez-moi librement de votre projet, vos attentes, vos questions.</p>
                         </div>
                         <div className="form__field">
                           <label htmlFor="message">Message *</label>
@@ -462,7 +462,7 @@ export default function ContactForm({ onSuccess }) {
                 {status === 'ok' && (
                   <div className="form__msg form__msg--ok">
                     <CheckCircle size={16} style={{ verticalAlign: 'middle', marginRight: 6 }} />
-                    Demande envoyée. Merci, nous reviendrons vers vous rapidement.
+                    Demande envoyée. Merci, je reviens vers vous rapidement.
                   </div>
                 )}
                 {status === 'err' && (

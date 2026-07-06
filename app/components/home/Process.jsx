@@ -21,7 +21,7 @@ const steps = [
     icon: Wand2,
     title: 'Création du site',
     desc:
-      "Nous structurons le contenu, créons le design et intégrons les éléments de contact. Un premier rendu est partagé pour vos retours."
+      "Je structure le contenu, crée le design et intègre les éléments de contact. Un premier rendu est partagé pour vos retours."
   },
   {
     n: '03',
@@ -172,7 +172,7 @@ function ProvideAccordion() {
         <Reveal>
           <div className="provide-head">
             <span className="section__eyebrow">À fournir</span>
-            <h2>Tout ce dont nous avons besoin pour démarrer</h2>
+            <h2>Tout ce dont j'ai besoin pour démarrer</h2>
             <p>
               Pas besoin de tout préparer d'un coup — on avance ensemble. Cliquez
               une catégorie pour voir le détail.

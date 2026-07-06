@@ -10,7 +10,7 @@ const faq = [
   {
     cat: 'Général',
     q: 'Quel type de site pouvez-vous créer ?',
-    a: 'Nous créons principalement des sites vitrines, des sites e-commerce, des sites click & collect et des landing pages professionnelles.'
+    a: 'Je crée principalement des sites vitrines, des sites e-commerce, des sites click & collect et des landing pages professionnelles.'
   },
   {
     cat: 'Mobile',
@@ -55,7 +55,7 @@ const faq = [
   {
     cat: 'Tarif',
     q: 'Combien coûte un site ?',
-    a: "Le tarif dépend du type de site, du nombre de pages, du contenu à intégrer et des fonctionnalités souhaitées. Une estimation peut être proposée après réception des informations du projet."
+    a: "Un site professionnel conçu pour générer des demandes représente un investissement de plusieurs milliers d'euros, pas un site low-cost jetable. Le tarif exact dépend du type de site, du nombre de pages, du contenu et des fonctionnalités. Une estimation gratuite est proposée après réception des informations du projet."
   }
 ];
 
@@ -73,8 +73,8 @@ export default function FAQ() {
                 <span className="section__eyebrow">FAQ</span>
                 <h2>Toutes vos questions, des réponses claires</h2>
                 <p>
-                  Vous ne trouvez pas la réponse que vous cherchez ? Contactez-nous,
-                  nous revenons vers vous rapidement avec un devis personnalisé.
+                  Vous ne trouvez pas la réponse que vous cherchez ? Contactez-moi,
+                  je reviens vers vous rapidement avec un devis personnalisé.
                 </p>
 
                 <div className="faq-side__card">
@@ -83,10 +83,10 @@ export default function FAQ() {
                   </div>
                   <div className="faq-side__title">Une question spécifique ?</div>
                   <p className="faq-side__desc">
-                    Décrivez votre projet, nous vous répondons sous 48h ouvrées.
+                    Décrivez votre projet, je vous réponds sous 48h ouvrées.
                   </p>
                   <MagneticButton className="magnetic--primary" href="/contact">
-                    Nous contacter <ArrowRight size={16} />
+                    Me contacter <ArrowRight size={16} />
                   </MagneticButton>
                 </div>
 

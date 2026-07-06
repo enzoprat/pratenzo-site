@@ -144,7 +144,7 @@ export default function ForWho() {
             <span className="section__eyebrow">Pour qui ?</span>
             <h2>Des sites adaptés aux pros qui veulent être mieux présentés</h2>
             <p>
-              Sélectionnez votre profil pour découvrir comment nous abordons votre
+              Sélectionnez votre profil pour découvrir comment j'aborde votre
               type d'activité.
             </p>
           </div>
