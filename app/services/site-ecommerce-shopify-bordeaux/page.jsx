@@ -28,7 +28,8 @@ const breadcrumb = [
 const content = {
   intro: [
     "Shopify est aujourd'hui la plateforme de référence pour vendre en ligne avec une fiabilité industrielle. Paiements sécurisés, gestion du stock, application mobile, infrastructure performante : tout ce dont a besoin une marque ou un commerce pour développer son activité e-commerce, sans dépendre d'un développeur pour chaque modification.",
-    "L'objectif d'une boutique Shopify Prat Enzo n'est pas seulement d'être en ligne, mais de convertir : pages produits soignées, parcours d'achat optimisé, mise en valeur de la marque, expérience mobile fluide."
+    "L'objectif d'une boutique Shopify Prat Enzo n'est pas seulement d'être en ligne, mais de convertir : pages produits soignées, parcours d'achat optimisé, mise en valeur de la marque, expérience mobile fluide.",
+    "Vous travaillez directement avec le concepteur de votre boutique, sans intermédiaire. Un e-commerce sur mesure conçu comme un outil de vente rentable, pas un template générique posé à la va-vite."
   ],
   process: [
     "Le projet démarre par une analyse de votre catalogue, votre identité de marque et vos objectifs commerciaux. La structure de la boutique est ensuite définie : collections, taxonomie produit, navigation, parcours d'achat.",

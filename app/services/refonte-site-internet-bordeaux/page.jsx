@@ -30,7 +30,8 @@ const breadcrumb = [
 const content = {
   intro: [
     "Votre site actuel a quelques années, n'est pas responsive, n'apparaît pas dans Google, ne reflète plus votre activité ? La refonte permet de moderniser le design, repenser la structure, améliorer les performances et préparer le SEO sans repartir de zéro.",
-    "Une refonte Prat Enzo est plus qu'un changement de design : c'est un audit complet de l'existant, une nouvelle architecture pensée pour la conversion, une migration propre des contenus, et une base SEO renforcée."
+    "Une refonte Prat Enzo est plus qu'un changement de design : c'est un audit complet de l'existant, une nouvelle architecture pensée pour la conversion, une migration propre des contenus, et une base SEO renforcée.",
+    "La plupart des anciens sites tournent sur des WordPress alourdis par les extensions, lents et mal notés sur les Core Web Vitals. La refonte est l'occasion de passer sur une stack moderne (Next.js) : chargement quasi instantané, meilleur référencement, expérience mobile irréprochable. Vous échangez directement avec le concepteur, sans intermédiaire."
   ],
   process: [
     "Le projet démarre par un audit du site existant : structure, performances, mots-clés, points de friction. Sur cette base, une nouvelle arborescence est définie, le design retravaillé, les contenus migrés ou réécrits.",
@@ -52,6 +53,10 @@ const content = {
     {
       q: 'Faut-il refaire mes contenus ?',
       a: "Pas nécessairement. Les contenus existants peuvent être repris s'ils sont de qualité, ou retravaillés selon le besoin."
+    },
+    {
+      q: 'Comment obtenir un devis pour ma refonte ?',
+      a: "Le devis est gratuit et sans engagement. Après un rapide audit de votre site actuel (structure, performances, positions Google), vous recevez une estimation claire et détaillée du projet de refonte."
     }
   ],
   relatedServices: [
