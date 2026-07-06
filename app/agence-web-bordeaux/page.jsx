@@ -7,7 +7,7 @@ import CtaBlock from '@/app/components/shared/CtaBlock';
 export const metadata = buildMetadata({
   title: 'Agence web Bordeaux | Création de sites internet professionnels | Prat Enzo',
   description:
-    "Prat Enzo est une structure de création de sites web à Bordeaux : sites vitrines, e-commerce Shopify et click & collect pensés pour les professionnels.",
+    "Concepteur web indépendant à Bordeaux : sites vitrines, e-commerce Shopify et click & collect pensés pour les professionnels. L'alternative directe à la grosse agence.",
   path: '/agence-web-bordeaux'
 });
 

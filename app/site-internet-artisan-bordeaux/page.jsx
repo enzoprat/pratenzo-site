@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { buildMetadata, buildWebPageSchema, buildBreadcrumbSchema, buildServiceSchema } from '@/app/lib/seo';
+import { buildMetadata, buildWebPageSchema, buildBreadcrumbSchema, buildServiceSchema, buildFaqSchema } from '@/app/lib/seo';
 import { realisations } from '@/app/lib/data/realisations';
 import JsonLd from '@/app/components/seo/JsonLd';
 import PageShell from '@/app/components/shared/PageShell';
@@ -18,6 +18,25 @@ const artisanReals = realisations.filter(r =>
   ['castagne-couverture', 'couverture-gironde', 'sm-couverture-pau'].includes(r.slug)
 );
 
+const artisanFaq = [
+  {
+    q: 'Combien coûte un site pour artisan ?',
+    a: "Un site vitrine artisan conçu pour rassurer les prospects et générer des demandes de devis représente un investissement de plusieurs milliers d'euros, pas un site low-cost jetable. Le tarif exact dépend du nombre de pages, du contenu et des fonctionnalités. Une estimation gratuite est proposée après analyse du projet."
+  },
+  {
+    q: 'Faut-il que je prenne les photos moi-même ?',
+    a: "Vos photos de chantiers (avant/après) sont les plus parlantes. Si vous n'en avez pas encore, des photos plus simples peuvent être utilisées en attendant."
+  },
+  {
+    q: "Le site fonctionne-t-il pour des prospects qui m'appellent depuis leur téléphone ?",
+    a: "Oui, le site est conçu mobile-first. Un bouton d'appel est mis en évidence pour faciliter les prises de contact directes depuis un smartphone."
+  },
+  {
+    q: 'Est-ce que je travaille directement avec le concepteur du site ?',
+    a: "Oui. Vous échangez directement avec la personne qui conçoit votre site, du premier appel à la mise en ligne. Pas de commercial, pas d'agence anonyme : un interlocuteur unique qui reste joignable après la livraison."
+  }
+];
+
 export default function SiteArtisanBordeauxPage() {
   const wp = buildWebPageSchema({ path: '/site-internet-artisan-bordeaux', title: metadata.title, description: metadata.description });
   const bc = buildBreadcrumbSchema(breadcrumb);
@@ -27,10 +46,11 @@ export default function SiteArtisanBordeauxPage() {
     slug: 'site-vitrine-bordeaux',
     areaServed: ['Bordeaux', 'Gironde']
   });
+  const faq = buildFaqSchema(artisanFaq);
 
   return (
     <>
-      <JsonLd data={[wp, bc, svc]} />
+      <JsonLd data={[wp, bc, svc, faq]} />
       <PageShell
         breadcrumb={breadcrumb}
         eyebrow="Persona · Artisans"
@@ -99,14 +119,12 @@ export default function SiteArtisanBordeauxPage() {
             </div>
 
             <h2>Foire aux questions</h2>
-            <h3>Combien coûte un site pour artisan ?</h3>
-            <p>Le tarif dépend du type de site, du nombre de pages, du contenu à intégrer et des fonctionnalités souhaitées. Une estimation peut être proposée après analyse du projet.</p>
-
-            <h3>Faut-il que je prenne les photos moi-même ?</h3>
-            <p>Vos photos de chantiers (avant/après) sont les plus parlantes. Si vous n'en avez pas encore, des photos plus simples peuvent être utilisées en attendant.</p>
-
-            <h3>Le site fonctionne-t-il pour des prospects qui m'appellent depuis leur téléphone ?</h3>
-            <p>Oui, le site est conçu mobile-first. Un bouton d'appel est mis en évidence pour faciliter les prises de contact directes depuis un smartphone.</p>
+            {artisanFaq.map((f, i) => (
+              <div key={i}>
+                <h3>{f.q}</h3>
+                <p>{f.a}</p>
+              </div>
+            ))}
           </div>
         </section>
 

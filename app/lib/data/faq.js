@@ -59,7 +59,7 @@ export const faqHome = [
   {
     cat: 'Tarif',
     q: 'Combien coûte un site internet ?',
-    a: "Le tarif dépend du type de site, du nombre de pages, du contenu à intégrer et des fonctionnalités souhaitées. Une estimation peut être proposée après analyse du projet."
+    a: "Un site professionnel conçu pour générer des demandes représente un investissement de plusieurs milliers d'euros, pas un site low-cost jetable. Le tarif exact dépend du type de site, du nombre de pages, du contenu et des fonctionnalités. Une estimation gratuite est proposée après analyse du projet."
   },
   {
     cat: 'Démarrage',
