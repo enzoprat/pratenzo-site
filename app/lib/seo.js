@@ -75,6 +75,7 @@ export function buildOrgSchema() {
     url: SITE_URL,
     logo: `${SITE_URL}/favicon.svg`,
     image: `${SITE_URL}/og-image.png`,
+    telephone: config.phone,
     founder: { '@id': `${SITE_URL}/#person` },
     priceRange: 'Sur devis',
     areaServed: [

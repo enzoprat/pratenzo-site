@@ -29,21 +29,22 @@ export default function AProposPage() {
       <PageShell
         breadcrumb={breadcrumb}
         eyebrow="À propos"
-        h1={<>Une approche claire, moderne et <strong>orientée résultats</strong></>}
-        sub="Prat Enzo accompagne les professionnels dans la création de sites internet pensés pour être beaux, clairs et utiles. L'objectif n'est pas seulement de créer un site esthétique, mais de construire un support capable de rassurer, convertir et évoluer avec l'activité."
+        h1={<>Moi, c'est <strong>Enzo</strong> — et je conçois vos sites</>}
+        sub="Je m'appelle Enzo Prat et je crée des sites internet pour les professionnels de Bordeaux et de la Gironde. Pas une agence anonyme : une seule personne, qui conçoit votre site du premier appel à la mise en ligne, et qui reste joignable ensuite."
       >
         <section className="container" style={{ paddingBottom: 60 }}>
           <div className="prose">
-            <h2>L'approche</h2>
+            <h2>Mon approche</h2>
             <p>
               Beaucoup de prestataires web livrent un site puis disparaissent. Beaucoup d'agences vendent des sites
               sur-dimensionnés à des artisans qui auraient juste besoin d'un site clair. Beaucoup de freelances bâclent
               le SEO ou le responsive.
             </p>
             <p>
-              Prat Enzo travaille différemment : analyse réelle du besoin, structure pensée pour la conversion, design
+              Je travaille différemment : analyse réelle du besoin, structure pensée pour la conversion, design
               moderne, intégration propre, SEO local intégré dès la conception, mise en ligne accompagnée. Pas de
-              promesses excessives, pas de top 1 Google garanti, juste un travail solide.
+              promesses excessives, pas de top 1 Google garanti, juste un travail solide. Et surtout, vous savez avec
+              qui vous travaillez : moi, directement, sans intermédiaire ni junior à qui le projet est refilé.
             </p>
 
             <h2>Expertises</h2>
@@ -58,28 +59,28 @@ export default function AProposPage() {
 
             <h2>Stack et outils</h2>
             <p>
-              Selon le type de projet, plusieurs technologies peuvent être utilisées : Next.js / React pour les sites
-              sur mesure performants, Webflow pour les vitrines à éditer en CMS, Shopify pour le e-commerce. Le code
-              est propre, hébergé sur Vercel ou des plateformes équivalentes pour la performance, et complété par des
+              Selon le type de projet, j'utilise plusieurs technologies : Next.js / React pour les sites
+              sur mesure performants, Webflow pour les vitrines à éditer en CMS, Shopify pour le e-commerce. Je livre un
+              code propre, hébergé sur Vercel ou des plateformes équivalentes pour la performance, et complété par des
               outils comme Web3Forms pour les formulaires, Google Search Console et Google Business Profile pour la
               visibilité.
             </p>
             <p>
-              L'objectif est toujours le même : choisir la bonne technologie pour le bon projet, sans complexifier
+              Mon objectif est toujours le même : choisir la bonne technologie pour le bon projet, sans complexifier
               inutilement.
             </p>
 
-            <h2>Localisation</h2>
+            <h2>Où je travaille</h2>
             <p>
-              Basé à Bordeaux, intervention principalement sur la <Link href="/creation-site-internet-gironde">Gironde</Link>
-              et la métropole bordelaise. Des projets sont également réalisés à distance pour des clients ailleurs en
+              Je suis basé à Bordeaux et j'interviens principalement sur la <Link href="/creation-site-internet-gironde">Gironde</Link>
+              et la métropole bordelaise. Je réalise aussi des projets à distance pour des clients ailleurs en
               France selon les besoins.
             </p>
 
-            <h2>Vision</h2>
+            <h2>Ma vision</h2>
             <p>
               Un site internet n'est pas une fin en soi. C'est un outil pour rendre une activité plus visible, plus
-              crédible, plus accessible. Tout le travail est orienté autour de cette idée : que le site soit utile,
+              crédible, plus accessible. Tout mon travail est orienté autour de cette idée : que le site soit utile,
               clair pour le visiteur, et qu'il génère concrètement des demandes.
             </p>
           </div>
