@@ -132,6 +132,12 @@ export default function CreationSiteInternetBordeauxPage() {
               <Link href="/creation-site-internet-artigues-pres-bordeaux"> Artigues-près-Bordeaux</Link> et
               <Link href="/creation-site-internet-marcheprime"> Marcheprime</Link>.
             </p>
+            <p>
+              Mérignac, deuxième ville de la métropole et pôle économique majeur, concentre une forte
+              demande locale : la page dédiée à la{' '}
+              <Link href="/creation-site-internet-merignac">création de site internet à Mérignac</Link>{' '}
+              détaille les spécificités de la commune (Mérignac Soleil, zone aéroportuaire, quartiers résidentiels).
+            </p>
 
             <h2>Questions fréquentes</h2>
             {localFaq.map((f, i) => (

@@ -5,6 +5,7 @@ import {
   buildBreadcrumbSchema,
   buildFaqSchema
 } from '@/app/lib/seo';
+import { config } from '@/app/lib/config';
 import JsonLd from '@/app/components/seo/JsonLd';
 import PageShell from '@/app/components/shared/PageShell';
 import CtaBlock from '@/app/components/shared/CtaBlock';
@@ -45,10 +46,22 @@ export default function CreationSiteMerignacPage() {
   const wp = buildWebPageSchema({ path: '/creation-site-internet-merignac', title: metadata.title, description: metadata.description });
   const bc = buildBreadcrumbSchema(breadcrumb);
   const faq = buildFaqSchema(cityFaq);
+  const pageUrl = `${config.baseUrl}/creation-site-internet-merignac`;
+  const svc = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${pageUrl}#service`,
+    name: 'Création de site internet à Mérignac',
+    description: metadata.description,
+    serviceType: 'Création de site internet',
+    provider: { '@id': `${config.baseUrl}/#agency` },
+    areaServed: { '@type': 'City', name: 'Mérignac' },
+    url: pageUrl
+  };
 
   return (
     <>
-      <JsonLd data={[wp, bc, faq]} />
+      <JsonLd data={[wp, svc, bc, faq]} />
       <PageShell
         breadcrumb={breadcrumb}
         eyebrow="Mérignac · Page locale"

@@ -39,6 +39,7 @@ const content = {
   ],
   local: [
     "Pour les entreprises bordelaises et girondines qui ont déjà un site mais peinent à se positionner localement, la refonte est l'occasion de repenser le SEO local : balises adaptées, contenus orientés zones, fiche Google Business cohérente, maillage interne.",
+    "La refonte concerne aussi bien les entreprises de Bordeaux que celles de Mérignac, Pessac, du Bassin d'Arcachon et, plus largement, de toute la Nouvelle-Aquitaine : la démarche reste la même, avec des redirections 301 propres pour conserver le référencement déjà acquis, quel que soit le territoire.",
     "Une refonte bien menée permet souvent de débloquer des positions Google qui stagnaient avec l'ancien site."
   ],
   faq: [
@@ -87,7 +88,8 @@ export default function RefonteBordeauxPage() {
   const svc = buildServiceSchema({
     name: 'Refonte de site internet à Bordeaux',
     description: service.metaDescription,
-    slug: 'refonte-site-internet-bordeaux'
+    slug: 'refonte-site-internet-bordeaux',
+    areaServed: ['Bordeaux', 'Mérignac', 'Pessac', 'Gironde', 'Nouvelle-Aquitaine']
   });
   const bc = buildBreadcrumbSchema(breadcrumb);
   const faq = content.faq ? buildFaqSchema(content.faq) : null;
