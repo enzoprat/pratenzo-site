@@ -32,7 +32,7 @@ function TiltCard({ r }) {
       <div className="real-card__media">
         <img
           src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(r.url)}?w=800&h=500`}
-          alt={`Aperçu du site ${r.name}`}
+          alt={`Aperçu du site ${r.name} — ${r.category} réalisé par Prat Enzo`}
           loading="lazy"
           width="800"
           height="500"

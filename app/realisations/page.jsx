@@ -53,7 +53,7 @@ export default function RealisationsPage() {
                 <div className="real-card__media">
                   <img
                     src={screenshot(r.url)}
-                    alt={`Aperçu du site ${r.name}`}
+                    alt={`Aperçu du site ${r.name} — ${r.category} réalisé par Prat Enzo`}
                     loading="lazy"
                     width="800"
                     height="500"

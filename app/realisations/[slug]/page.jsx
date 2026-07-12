@@ -105,7 +105,7 @@ export default function RealisationDetailPage({ params }) {
             <div className="detail-media">
               <img
                 src={screenshot(r.url)}
-                alt={`Aperçu du site ${r.name}`}
+                alt={`Aperçu du site ${r.name} — ${r.category} réalisé par Prat Enzo`}
                 width="1000"
                 height="625"
                 loading="eager"
