@@ -23,11 +23,19 @@ export default function AgenceWebBordeauxPage() {
       <PageShell
         breadcrumb={breadcrumb}
         eyebrow="Bordeaux · Agence web"
-        h1={<><strong>Création de sites web</strong> à Bordeaux</>}
-        sub="Une approche claire, sans intermédiaires inutiles : analyse, design, intégration et mise en ligne pour des sites professionnels qui durent et convertissent."
+        h1={<><strong>Agence web</strong> à Bordeaux</>}
+        sub="L'alternative directe à la grosse agence : un seul interlocuteur, de l'analyse à la mise en ligne, pour des sites professionnels qui durent et convertissent."
       >
         <section className="container" style={{ paddingBottom: 60 }}>
           <div className="prose">
+            <p>
+              «&nbsp;Agence web&nbsp;» à Bordeaux recouvre en réalité des structures très différentes&nbsp;: des grosses
+              agences à plusieurs strates, des studios, et des indépendants. Prat Enzo, c'est cette dernière option&nbsp;:
+              un interlocuteur unique qui prend en charge l'ensemble de la{' '}
+              <Link href="/creation-site-internet-bordeaux">création de votre site internet à Bordeaux</Link>, sans les
+              coûts ni les délais d'une organisation à multiples intermédiaires.
+            </p>
+
             <h2>Pourquoi choisir Prat Enzo plutôt qu'une grosse agence ?</h2>
             <p>
               Beaucoup d'agences web bordelaises proposent des prestations très standardisées, avec des coûts gonflés
@@ -38,7 +46,9 @@ export default function AgenceWebBordeauxPage() {
             <p>
               Prat Enzo intervient directement, sans intermédiaires, avec une approche orientée résultat : analyse du
               besoin, design, intégration et mise en ligne. Le résultat est un site professionnel, livré dans de bons
-              délais, avec une vraie réflexion sur la conversion et le SEO local.
+              délais, avec une vraie réflexion sur la conversion et le SEO local. Pour comparer sereinement les deux
+              modèles, voir le guide{' '}
+              <Link href="/guides/freelance-vs-agence-web-bordeaux">freelance ou agence web à Bordeaux</Link>.
             </p>
 
             <h2>Approche</h2>
