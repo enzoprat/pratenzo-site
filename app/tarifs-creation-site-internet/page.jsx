@@ -94,6 +94,12 @@ export default function TarifsPage() {
             <h2>Mode de paiement</h2>
             <p>Le paiement peut être effectué par virement ou espèces. Un acompte de 40% est demandé au démarrage du projet.</p>
 
+            <p>
+              Pour approfondir le sujet, consultez le guide{' '}
+              <Link href="/guides/cout-site-internet-bordeaux">combien coûte un site internet à Bordeaux</Link>,
+              qui détaille chaque facteur de prix et explique pourquoi le moins cher revient souvent le plus cher.
+            </p>
+
             <h2>Foire aux questions sur les tarifs</h2>
             {tarifsFaq.map((f, i) => (
               <div key={i}>

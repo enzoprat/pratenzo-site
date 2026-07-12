@@ -220,6 +220,25 @@ export function buildCreativeWorkSchema({ slug, name, description, sameAs }) {
   };
 }
 
+/* Schema : Article (guides) */
+export function buildArticleSchema({ slug, title, description, datePublished, dateModified }) {
+  const url = `${SITE_URL}/guides/${slug}`;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${url}#article`,
+    headline: asTitleString(title),
+    description,
+    url,
+    mainEntityOfPage: url,
+    inLanguage: 'fr-FR',
+    author: { '@id': `${SITE_URL}/#person` },
+    publisher: { '@id': `${SITE_URL}/#agency` },
+    datePublished,
+    dateModified: dateModified || datePublished
+  };
+}
+
 /* Schema : AboutPage + Person */
 export function buildAboutSchema({ path, title, description }) {
   const url = `${SITE_URL}${path}`;

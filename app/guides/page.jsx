@@ -19,7 +19,15 @@ const guides = [
     slug: 'cout-site-internet-bordeaux',
     title: 'Combien coûte la création d\u2019un site internet à Bordeaux ?',
     intent: 'Comprendre le budget',
-    desc: "Les facteurs qui influencent le prix d'un site web : type de site, pages, design, fonctionnalités."
+    desc: "Les facteurs qui influencent le prix d'un site web : type de site, pages, design, fonctionnalités.",
+    published: true
+  },
+  {
+    slug: 'freelance-vs-agence-web-bordeaux',
+    title: 'Freelance ou agence web à Bordeaux : comment choisir ?',
+    intent: 'Comparer les prestataires',
+    desc: 'Comment choisir entre une grosse agence et un prestataire indépendant.',
+    published: true
   },
   {
     slug: 'site-vitrine-vs-page-facebook',
@@ -44,12 +52,6 @@ const guides = [
     title: 'Webflow ou Shopify : que choisir ?',
     intent: 'Choisir la techno',
     desc: 'Les forces et limites des deux plateformes selon votre projet.'
-  },
-  {
-    slug: 'freelance-vs-agence-web-bordeaux',
-    title: 'Freelance ou agence web à Bordeaux : comment choisir ?',
-    intent: 'Comparer les prestataires',
-    desc: 'Comment choisir entre une grosse agence et un prestataire indépendant.'
   },
   {
     slug: 'preparer-creation-site',
@@ -88,22 +90,33 @@ export default function GuidesPage() {
         breadcrumb={breadcrumb}
         eyebrow="Ressources"
         h1={<>Guides sur la <strong>création de sites internet</strong></>}
-        sub="Réponses aux questions les plus posées sur la création de sites internet à Bordeaux. Articles à venir, déjà thématisés par intention de recherche."
+        sub="Réponses aux questions les plus posées sur la création de sites internet à Bordeaux, thématisées par intention de recherche. De nouveaux articles sont publiés régulièrement."
       >
         <section className="container" style={{ paddingBottom: 60 }}>
           <div className="related-links" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
-            {guides.map(g => (
-              <div key={g.slug} className="related-link" style={{ opacity: 0.85 }}>
-                <span className="related-link__cat">{g.intent}</span>
-                <span className="related-link__title">{g.title}</span>
-                <span className="related-link__sub">{g.desc}</span>
-                <span style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: 8 }}>Article à venir</span>
-              </div>
-            ))}
+            {guides.map(g =>
+              g.published ? (
+                <Link key={g.slug} href={`/guides/${g.slug}`} className="related-link">
+                  <span className="related-link__cat">{g.intent}</span>
+                  <span className="related-link__title">{g.title}</span>
+                  <span className="related-link__sub">{g.desc}</span>
+                  <span style={{ fontSize: '0.78rem', color: 'var(--primary)', fontWeight: 600, marginTop: 8, display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                    Lire le guide <ArrowRight size={13} />
+                  </span>
+                </Link>
+              ) : (
+                <div key={g.slug} className="related-link" style={{ opacity: 0.85 }}>
+                  <span className="related-link__cat">{g.intent}</span>
+                  <span className="related-link__title">{g.title}</span>
+                  <span className="related-link__sub">{g.desc}</span>
+                  <span style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: 8 }}>Article à venir</span>
+                </div>
+              )
+            )}
           </div>
           <p style={{ textAlign: 'center', marginTop: 40, color: 'var(--muted)' }}>
-            En attendant la publication des articles, n'hésitez pas à
-            <Link href="/contact" style={{ color: 'var(--primary)', fontWeight: 600 }}> poser votre question directement</Link>.
+            Une question qui n'a pas encore son guide ? N'hésitez pas à
+            <Link href="/contact" style={{ color: 'var(--primary)', fontWeight: 600 }}> la poser directement</Link>.
           </p>
         </section>
 
