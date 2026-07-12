@@ -104,7 +104,8 @@ export default function SiteArtisanBordeauxPage() {
             </p>
             <p>
               Le site peut être complété par des pages dédiées par ville ou par prestation pour aller plus loin sur le
-              SEO local.
+              SEO local. Pour comprendre en quoi un site change concrètement la donne pour un artisan, voir le guide{' '}
+              <Link href="/guides/pourquoi-artisan-site-internet">pourquoi un artisan a besoin d'un site internet</Link>.
             </p>
 
             <h2>Réalisations dans le bâtiment</h2>

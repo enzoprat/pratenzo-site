@@ -29,6 +29,8 @@ export default function sitemap() {
     { url: `${SITE}/guides`, priority: 0.6, changeFrequency: 'monthly' },
     { url: `${SITE}/guides/cout-site-internet-bordeaux`, priority: 0.7, changeFrequency: 'monthly' },
     { url: `${SITE}/guides/freelance-vs-agence-web-bordeaux`, priority: 0.7, changeFrequency: 'monthly' },
+    { url: `${SITE}/guides/pourquoi-artisan-site-internet`, priority: 0.7, changeFrequency: 'monthly' },
+    { url: `${SITE}/guides/site-vitrine-vs-ecommerce`, priority: 0.7, changeFrequency: 'monthly' },
     { url: `${SITE}/secteurs`, priority: 0.5, changeFrequency: 'monthly' },
     { url: `${SITE}/mentions-legales`, priority: 0.2, changeFrequency: 'yearly' },
     { url: `${SITE}/politique-confidentialite`, priority: 0.2, changeFrequency: 'yearly' },

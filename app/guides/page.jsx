@@ -30,22 +30,24 @@ const guides = [
     published: true
   },
   {
-    slug: 'site-vitrine-vs-page-facebook',
-    title: 'Site vitrine ou page Facebook : que choisir pour un artisan ?',
-    intent: 'Comparer les options',
-    desc: "Pourquoi un site vitrine est un actif durable, là où une page Facebook reste dépendante d'une plateforme."
-  },
-  {
     slug: 'pourquoi-artisan-site-internet',
     title: 'Pourquoi un artisan à Bordeaux devrait avoir un site internet ?',
     intent: 'Convaincre',
-    desc: 'Les bénéfices concrets : crédibilité, présentation, demandes qualifiées, visibilité Google.'
+    desc: 'Les bénéfices concrets : crédibilité, présentation, demandes qualifiées, visibilité Google.',
+    published: true
   },
   {
     slug: 'site-vitrine-vs-ecommerce',
     title: 'Site vitrine ou site e-commerce : comment choisir ?',
     intent: 'Choisir le bon type',
-    desc: "Quand un site vitrine suffit, et quand il faut passer au e-commerce."
+    desc: "Quand un site vitrine suffit, et quand il faut passer au e-commerce.",
+    published: true
+  },
+  {
+    slug: 'site-vitrine-vs-page-facebook',
+    title: 'Site vitrine ou page Facebook : que choisir pour un artisan ?',
+    intent: 'Comparer les options',
+    desc: "Pourquoi un site vitrine est un actif durable, là où une page Facebook reste dépendante d'une plateforme."
   },
   {
     slug: 'webflow-vs-shopify',
