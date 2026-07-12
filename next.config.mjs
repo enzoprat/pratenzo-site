@@ -58,6 +58,18 @@ const nextConfig = {
         permanent: true
       },
       {
+        // Ancien slug court → page service site vitrine
+        source: '/site-vitrine',
+        destination: '/services/site-vitrine-bordeaux',
+        permanent: true
+      },
+      {
+        // Ancienne réalisation Nils Bouchilloux → nouveau slug en sous-dossier
+        source: '/realisations-nils-bouchilloux',
+        destination: '/realisations/nils-bouchilloux',
+        permanent: true
+      },
+      {
         // Ancienne réalisation Adjadj → nouveau slug en sous-dossier
         source: '/realisations-adjadj',
         destination: '/realisations/adjadj-compagnie',
