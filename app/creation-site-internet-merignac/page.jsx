@@ -64,6 +64,14 @@ export default function CreationSiteMerignacPage() {
               Yser-Marne. La concurrence locale est forte, ce qui rend un site clair et bien référencé
               indispensable pour se démarquer.
             </p>
+            <p>
+              La commune est l'une des plus étendues de la métropole, avec des pôles économiques très
+              différents : la zone commerciale de Mérignac Soleil (l'une des plus importantes de
+              Nouvelle-Aquitaine), le cluster aéronautique et défense autour de l'aéroport, et de nombreux
+              quartiers résidentiels (Capeyron, Arlac, Beutre, Le Burck) où prospèrent artisans et commerces
+              de proximité. Un site pensé pour Mérignac tient compte de cette diversité : selon votre secteur
+              et votre quartier, les attentes des clients et les mots-clés recherchés ne sont pas les mêmes.
+            </p>
 
             <h2>Services principaux</h2>
             <ul>

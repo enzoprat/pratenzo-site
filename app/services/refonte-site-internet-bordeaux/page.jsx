@@ -57,6 +57,14 @@ const content = {
     {
       q: 'Comment obtenir un devis pour ma refonte ?',
       a: "Le devis est gratuit et sans engagement. Après un rapide audit de votre site actuel (structure, performances, positions Google), vous recevez une estimation claire et détaillée du projet de refonte."
+    },
+    {
+      q: 'Peut-on refondre un site WordPress existant ?',
+      a: "Oui. Un site WordPress vieillissant, lent ou alourdi par les extensions est un cas classique de refonte. Les contenus existants (textes, images, pages) sont récupérés, puis le site est reconstruit sur une base moderne et rapide, avec des redirections 301 depuis les anciennes URLs pour conserver le référencement acquis."
+    },
+    {
+      q: 'Quels signes indiquent qu\u2019une refonte est nécessaire ?',
+      a: "Les signaux les plus courants : un site qui ne s'affiche pas correctement sur mobile, un chargement lent, un design daté qui ne reflète plus votre activité, une absence dans les résultats Google, ou un site devenu difficile à mettre à jour. Si l'un de ces points vous concerne, une refonte est généralement plus rentable qu'un simple rafistolage."
     }
   ],
   relatedServices: [

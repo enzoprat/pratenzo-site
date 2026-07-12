@@ -36,7 +36,7 @@ export default function Footer() {
           <div>
             <h4>Zones desservies</h4>
             <ul>
-              <li><Link href="/creation-site-internet-bordeaux">Bordeaux</Link></li>
+              <li><Link href="/creation-site-internet-bordeaux">Création site internet Bordeaux</Link></li>
               <li><Link href="/creation-site-internet-merignac">Mérignac</Link></li>
               <li><Link href="/creation-site-internet-pessac">Pessac</Link></li>
               <li><Link href="/creation-site-internet-gironde">Gironde</Link></li>

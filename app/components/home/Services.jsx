@@ -97,7 +97,9 @@ export default function Services() {
             <span className="section__eyebrow">Services</span>
             <h2>Création de sites web sur mesure</h2>
             <p>
-              Trois solutions adaptées à votre activité. Choisissez celle qui vous
+              Trois solutions adaptées à votre activité. Pour tout savoir sur la{' '}
+              <Link href="/creation-site-internet-bordeaux">création de site internet à Bordeaux</Link>,
+              consultez la page dédiée — ou choisissez ci-dessous la solution qui vous
               correspond pour découvrir le détail.
             </p>
           </div>
