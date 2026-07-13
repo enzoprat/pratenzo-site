@@ -86,12 +86,12 @@ export default function CreationSiteMerignacPage() {
               et votre quartier, les attentes des clients et les mots-clés recherchés ne sont pas les mêmes.
             </p>
 
-            <h2>Services principaux</h2>
+            <h2>Quel type de site pour une activité à Mérignac ?</h2>
             <ul>
-              <li><Link href="/services/site-vitrine-bordeaux">Site vitrine</Link> pour présenter votre activité, vos services et générer des demandes</li>
-              <li><Link href="/services/site-ecommerce-shopify-bordeaux">E-commerce Shopify</Link> pour vendre vos produits en ligne</li>
-              <li><Link href="/services/click-and-collect-bordeaux">Click & collect</Link> pour fluidifier votre service de proximité</li>
-              <li><Link href="/services/refonte-site-internet-bordeaux">Refonte</Link> d'un site existant</li>
+              <li><Link href="/services/site-vitrine-bordeaux">Site vitrine</Link> pour les artisans et prestataires des quartiers résidentiels (Capeyron, Arlac, Le Burck)</li>
+              <li><Link href="/services/site-ecommerce-shopify-bordeaux">E-commerce Shopify</Link> pour les marques et commerces qui veulent vendre au-delà de la zone de Mérignac Soleil</li>
+              <li><Link href="/services/click-and-collect-bordeaux">Click & collect</Link> pour les commerces de proximité et la restauration</li>
+              <li><Link href="/services/refonte-site-internet-bordeaux">Refonte</Link> d'un site existant devenu daté ou invisible sur Google</li>
             </ul>
 
             <h2>Spécificités d'un site optimisé Mérignac</h2>
@@ -105,7 +105,7 @@ export default function CreationSiteMerignacPage() {
               page dédiée <Link href="/site-internet-artisan-bordeaux">Site internet artisan Bordeaux</Link>.
             </p>
 
-            <h2>Pour qui ?</h2>
+            <h2>À qui s'adresse un site à Mérignac ?</h2>
             <ul>
               <li>Artisans à Mérignac et alentours</li>
               <li>Commerces de proximité (boulangeries, instituts, restaurants)</li>
@@ -114,7 +114,7 @@ export default function CreationSiteMerignacPage() {
               <li>E-commerces basés à Mérignac</li>
             </ul>
 
-            <h2>Approche locale</h2>
+            <h2>Zone d'intervention autour de Mérignac</h2>
             <p>
               L'accompagnement couvre toute la Gironde. Voir aussi
               <Link href="/creation-site-internet-bordeaux"> Bordeaux</Link>,

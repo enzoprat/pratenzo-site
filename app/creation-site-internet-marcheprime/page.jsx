@@ -57,7 +57,7 @@ export default function CreationSiteMarcheprimePage() {
               avec une offre en ligne souvent légère. Un site clair et géolocalisé fait la différence.
             </p>
 
-            <h2>Services principaux</h2>
+            <h2>Quel type de site pour une activité à Marcheprime ?</h2>
             <ul>
               <li><Link href="/services/site-vitrine-bordeaux">Site vitrine</Link> pour générer des contacts qualifiés sur Marcheprime et alentours</li>
               <li><Link href="/services/site-ecommerce-shopify-bordeaux">E-commerce Shopify</Link> pour vendre vos produits localement et au-delà</li>
@@ -74,7 +74,7 @@ export default function CreationSiteMarcheprimePage() {
               <Link href="/site-internet-artisan-bordeaux"> Site internet artisan Bordeaux</Link>.
             </p>
 
-            <h2>Pour qui ?</h2>
+            <h2>À qui s'adresse un site à Marcheprime ?</h2>
             <ul>
               <li>Artisans du bâtiment (couvreurs, plombiers, électriciens, paysagistes, menuisiers)</li>
               <li>Commerces de bouche et restaurateurs</li>
@@ -83,7 +83,7 @@ export default function CreationSiteMarcheprimePage() {
               <li>Producteurs locaux et activités saisonnières</li>
             </ul>
 
-            <h2>Approche locale</h2>
+            <h2>Zone d'intervention entre Bordeaux et le Bassin</h2>
             <p>
               L'accompagnement couvre toute la zone entre Bordeaux et le Bassin. Voir aussi
               <Link href="/creation-site-internet-arcachon"> Arcachon</Link>,

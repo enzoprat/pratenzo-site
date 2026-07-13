@@ -58,7 +58,7 @@ export default function CreationSiteCapFerretPage() {
               site et fiche doivent être parfaitement alignés.
             </p>
 
-            <h2>Services principaux</h2>
+            <h2>Quel type de site pour une activité sur la presqu'île ?</h2>
             <ul>
               <li><Link href="/services/site-vitrine-bordeaux">Site vitrine</Link> haut de gamme pour hébergeurs, restaurateurs et prestataires</li>
               <li><Link href="/services/site-ecommerce-shopify-bordeaux">E-commerce Shopify</Link> pour ostréiculteurs, producteurs et concept stores</li>
@@ -75,7 +75,7 @@ export default function CreationSiteCapFerretPage() {
               parfois avec une connexion 4G correcte mais sans plus.
             </p>
 
-            <h2>Pour qui ?</h2>
+            <h2>À qui s'adresse un site au Cap Ferret ?</h2>
             <ul>
               <li>Chambres d'hôtes, gîtes, conciergeries et locations saisonnières</li>
               <li>Restaurants, bars à huîtres et établissements de bord d'eau</li>
@@ -85,7 +85,7 @@ export default function CreationSiteCapFerretPage() {
               <li>Commerces de bourg et boutiques de créateurs</li>
             </ul>
 
-            <h2>Approche locale</h2>
+            <h2>Zone d'intervention sur le Cap et le Bassin</h2>
             <p>
               L'accompagnement couvre le Bassin et la Gironde. Voir aussi
               <Link href="/creation-site-internet-arcachon"> Arcachon</Link>,

@@ -58,7 +58,7 @@ export default function CreationSiteArtiguesPage() {
               peut viser les premières positions Google sur des requêtes locales en quelques semaines.
             </p>
 
-            <h2>Services principaux</h2>
+            <h2>Quel type de site pour une entreprise d'Artigues ?</h2>
             <ul>
               <li><Link href="/services/site-vitrine-bordeaux">Site vitrine</Link> pour générer des demandes locales qualifiées</li>
               <li><Link href="/services/site-ecommerce-shopify-bordeaux">E-commerce Shopify</Link> pour vendre en ligne en plus de votre activité physique</li>
@@ -75,7 +75,7 @@ export default function CreationSiteArtiguesPage() {
               <Link href="/site-internet-artisan-bordeaux"> Site internet artisan Bordeaux</Link>.
             </p>
 
-            <h2>Pour qui ?</h2>
+            <h2>À qui s'adresse un site à Artigues ?</h2>
             <ul>
               <li>Artisans du bâtiment et professionnels du second œuvre</li>
               <li>PME et entreprises de service en zone d'activité</li>
@@ -84,7 +84,7 @@ export default function CreationSiteArtiguesPage() {
               <li>Indépendants et auto-entrepreneurs</li>
             </ul>
 
-            <h2>Approche locale</h2>
+            <h2>Zone d'intervention autour d'Artigues</h2>
             <p>
               L'accompagnement couvre la métropole bordelaise et la Gironde. Voir aussi
               <Link href="/creation-site-internet-bordeaux"> Bordeaux</Link>,

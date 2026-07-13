@@ -58,12 +58,12 @@ export default function CreationSiteAmbaresPage() {
               commerces de proximité, professions de santé.
             </p>
 
-            <h2>Services principaux</h2>
+            <h2>Quel site pour une entreprise d'Ambarès ?</h2>
             <ul>
-              <li><Link href="/services/site-vitrine-bordeaux">Site vitrine</Link> pour présenter votre activité, vos services et obtenir des demandes</li>
-              <li><Link href="/services/site-ecommerce-shopify-bordeaux">E-commerce Shopify</Link> pour vendre en ligne avec gestion stock et paiement</li>
-              <li><Link href="/services/click-and-collect-bordeaux">Click & collect</Link> pour les commerces de proximité</li>
-              <li><Link href="/services/refonte-site-internet-bordeaux">Refonte</Link> d'un site existant trop ancien ou pas mobile</li>
+              <li><Link href="/services/site-vitrine-bordeaux">Site vitrine</Link> pour les artisans et services aux entreprises de la rive droite</li>
+              <li><Link href="/services/site-ecommerce-shopify-bordeaux">E-commerce Shopify</Link> pour les commerces et producteurs qui veulent vendre en ligne</li>
+              <li><Link href="/services/click-and-collect-bordeaux">Click & collect</Link> pour les commerces de proximité et la restauration</li>
+              <li><Link href="/services/refonte-site-internet-bordeaux">Refonte</Link> d'un site trop ancien ou pas adapté au mobile</li>
             </ul>
 
             <h2>Particularités d'un site optimisé Ambarès</h2>
@@ -74,7 +74,7 @@ export default function CreationSiteAmbaresPage() {
               <Link href="/site-internet-artisan-bordeaux"> Site internet artisan Bordeaux</Link>.
             </p>
 
-            <h2>Pour qui ?</h2>
+            <h2>À qui s'adresse un site à Ambarès ?</h2>
             <ul>
               <li>Artisans du bâtiment (couvreurs, plombiers, électriciens, maçons, peintres, menuisiers)</li>
               <li>Entreprises de transport et logistique</li>
@@ -83,7 +83,7 @@ export default function CreationSiteAmbaresPage() {
               <li>PME et indépendants en zone d'activité</li>
             </ul>
 
-            <h2>Approche locale</h2>
+            <h2>Zone d'intervention sur la rive droite</h2>
             <p>
               L'accompagnement couvre toute la métropole bordelaise et la Gironde. Voir aussi
               <Link href="/creation-site-internet-bordeaux"> Bordeaux</Link>,

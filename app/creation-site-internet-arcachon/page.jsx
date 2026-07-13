@@ -62,7 +62,7 @@ export default function CreationSiteArcachonPage() {
               artisans du bâtiment et agences immobilières.
             </p>
 
-            <h2>Services principaux</h2>
+            <h2>Quel type de site pour une activité sur le Bassin ?</h2>
             <ul>
               <li><Link href="/services/site-vitrine-bordeaux">Site vitrine</Link> pour présenter votre activité, vos prestations et générer des contacts qualifiés</li>
               <li><Link href="/services/site-ecommerce-shopify-bordeaux">E-commerce Shopify</Link> pour vendre produits locaux, paniers ou cartes cadeaux</li>
@@ -82,7 +82,7 @@ export default function CreationSiteArcachonPage() {
               utile si votre activité couvre les deux rives du Bassin.
             </p>
 
-            <h2>Pour qui ?</h2>
+            <h2>À qui s'adresse un site sur le Bassin d'Arcachon ?</h2>
             <ul>
               <li>Hôteliers, gîtes, chambres d'hôtes et locations saisonnières</li>
               <li>Restaurateurs et bars à huîtres</li>
@@ -92,7 +92,7 @@ export default function CreationSiteArcachonPage() {
               <li>Commerces de centre-ville et indépendants</li>
             </ul>
 
-            <h2>Approche locale</h2>
+            <h2>Zone d'intervention autour du Bassin</h2>
             <p>
               L'accompagnement couvre tout le Bassin et plus largement la Gironde. Voir aussi
               <Link href="/creation-site-internet-bordeaux"> Bordeaux</Link> ou la page département
