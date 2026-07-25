@@ -59,7 +59,11 @@ export function buildPersonSchema() {
     name: 'Enzo Prat',
     url: SITE_URL,
     jobTitle: 'Concepteur de sites web',
-    worksFor: { '@id': `${SITE_URL}/#agency` }
+    worksFor: { '@id': `${SITE_URL}/#agency` },
+    sameAs: [
+      'https://www.linkedin.com/in/enzo-prat-263380235',
+      'https://www.malt.fr/profile/enzoprat'
+    ]
   };
 }
 
