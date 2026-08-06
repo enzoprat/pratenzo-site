@@ -32,14 +32,7 @@ export const config = {
    * et n'est JAMAIS exposé sur le site public.
    */
   web3formsKey: 'd259524d-b71d-4bb4-a26f-60455a488c9a',
-  web3formsSubject: 'Nouvelle demande Prat Enzo',
-
-  // Liens externes optionnels
-  socials: {
-    instagram: '',
-    facebook: '',
-    linkedin: ''
-  }
+  web3formsSubject: 'Nouvelle demande Prat Enzo'
 };
 
 // Réexport des réalisations depuis le fichier de données (rétro-compat)

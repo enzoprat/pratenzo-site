@@ -1,4 +1,5 @@
 import { config } from './config';
+import { SOCIAL_URLS } from './social';
 
 const SITE_URL = config.baseUrl;
 
@@ -61,7 +62,7 @@ export function buildPersonSchema() {
     jobTitle: 'Concepteur de sites web',
     worksFor: { '@id': `${SITE_URL}/#agency` },
     sameAs: [
-      'https://www.linkedin.com/in/enzo-prat-263380235',
+      ...SOCIAL_URLS,
       'https://www.malt.fr/profile/enzoprat'
     ]
   };

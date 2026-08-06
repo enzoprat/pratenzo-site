@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { SOCIALS } from '@/app/lib/social';
 
 const links = [
   { href: '/', label: 'Accueil' },
@@ -61,6 +62,20 @@ export default function Header() {
           </nav>
 
           <div className="header__cta">
+            <ul className="header__socials" aria-label="Réseaux sociaux">
+              {SOCIALS.map(({ name, url, Icon }) => (
+                <li key={name}>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="me noopener noreferrer"
+                    aria-label={`Enzo Prat / Studio sur ${name}`}
+                  >
+                    <Icon size={20} aria-hidden="true" focusable="false" />
+                  </a>
+                </li>
+              ))}
+            </ul>
             <Link href="/contact" className="btn btn--primary">
               Demander mon site <ArrowRight size={16} />
             </Link>
