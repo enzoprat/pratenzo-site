@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { SOCIALS } from '@/app/lib/social';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -19,6 +20,21 @@ export default function Footer() {
               Création de sites internet à Bordeaux et en Gironde : sites vitrines,
               e-commerce Shopify et click & collect pour professionnels.
             </p>
+            <ul className="footer__socials" aria-label="Réseaux sociaux">
+              {SOCIALS.map(({ name, url, Icon }) => (
+                <li key={name}>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="me noopener noreferrer"
+                    aria-label={`Enzo Prat / Studio sur ${name}`}
+                  >
+                    <Icon size={22} aria-hidden="true" focusable="false" />
+                    <span>{name}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div>
