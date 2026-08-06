@@ -12,6 +12,9 @@ import manualVideos from './data/videos.json';
 const CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID || 'UCf395BCK6LDzYjKg-JFPtrw';
 const RSS_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
 
+/* Les vidéos antérieures à 2026 (anciennes publications) ne sont pas affichées sur le site. */
+const MIN_DATE = new Date('2026-01-01T00:00:00Z');
+
 const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_' });
 
 /* Construit l'URL d'embed selon la plateforme. null = pas d'embed fiable → lien sortant. */
@@ -88,7 +91,9 @@ async function fetchYouTube() {
 export async function getAllVideos() {
   const youtube = await fetchYouTube();
   const manual = manualVideos.map(normalizeManual);
-  return [...youtube, ...manual].sort((a, b) => new Date(b.date) - new Date(a.date));
+  return [...youtube, ...manual]
+    .filter(v => new Date(v.date) >= MIN_DATE)
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
 export async function getVideoBySlug(slug) {
