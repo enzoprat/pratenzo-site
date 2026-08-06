@@ -9,6 +9,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 's0.wp.com',
         pathname: '/mshots/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ytimg.com',
+        pathname: '/**'
       }
     ],
     formats: ['image/avif', 'image/webp']

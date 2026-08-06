@@ -1,6 +1,7 @@
 import { config } from './lib/config';
 import { realisations } from './lib/data/realisations';
 import { services } from './lib/data/services';
+import { getTranscriptSlugs } from './lib/videos';
 
 const SITE = config.baseUrl;
 
@@ -32,6 +33,7 @@ export default function sitemap() {
     { url: `${SITE}/guides/pourquoi-artisan-site-internet`, priority: 0.7, changeFrequency: 'monthly' },
     { url: `${SITE}/guides/site-vitrine-vs-ecommerce`, priority: 0.7, changeFrequency: 'monthly' },
     { url: `${SITE}/secteurs`, priority: 0.5, changeFrequency: 'monthly' },
+    { url: `${SITE}/videos`, priority: 0.6, changeFrequency: 'daily' },
     { url: `${SITE}/mentions-legales`, priority: 0.2, changeFrequency: 'yearly' },
     { url: `${SITE}/politique-confidentialite`, priority: 0.2, changeFrequency: 'yearly' },
     { url: `${SITE}/conditions-de-prestation`, priority: 0.2, changeFrequency: 'yearly' }
@@ -49,7 +51,13 @@ export default function sitemap() {
     changeFrequency: 'monthly'
   }));
 
-  return [...staticPages, ...servicePages, ...realisationPages].map(p => ({
+  const videoPages = getTranscriptSlugs().map(slug => ({
+    url: `${SITE}/videos/${slug}`,
+    priority: 0.6,
+    changeFrequency: 'monthly'
+  }));
+
+  return [...staticPages, ...servicePages, ...realisationPages, ...videoPages].map(p => ({
     ...p,
     lastModified: now
   }));

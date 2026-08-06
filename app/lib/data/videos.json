@@ -1,0 +1,25 @@
+[
+  {
+    "id": "seo-local-3-erreurs",
+    "titre": "Les 3 erreurs qui plombent le SEO local d'un artisan",
+    "description": "Trois réglages simples que la plupart des artisans oublient et qui les rendent invisibles sur les recherches de leur ville. Exemple concret sur une requête bordelaise.",
+    "plateforme": "instagram",
+    "url": "https://www.instagram.com/reel/REMPLACER_PAR_ID/",
+    "date": "2026-08-05",
+    "theme": "seo-local",
+    "pageLiee": "/seo-bordeaux",
+    "thumbnail": "/videos/seo-local-3-erreurs.jpg",
+    "transcript": "Première erreur : ne pas mentionner sa ville dans les titres de pages. Deuxième erreur : une fiche Google Business Profile laissée à l'abandon, sans avis ni photos récentes. Troisième erreur : un site lent qui décourage à la fois les visiteurs et Google. On reprend chacune de ces erreurs et la façon de la corriger pour un artisan basé à Bordeaux ou en Gironde."
+  },
+  {
+    "id": "vitrine-ou-ecommerce",
+    "titre": "Site vitrine ou e-commerce : comment choisir",
+    "description": "La question que se posent tous les commerçants qui se lancent en ligne. Un cadre simple pour trancher selon votre activité.",
+    "plateforme": "tiktok",
+    "url": "https://www.tiktok.com/@enzo.artisanpro/video/REMPLACER_PAR_ID",
+    "date": "2026-08-04",
+    "theme": "conseils",
+    "pageLiee": "/guides/site-vitrine-vs-ecommerce",
+    "thumbnail": "/videos/vitrine-ou-ecommerce.jpg"
+  }
+]
