@@ -64,7 +64,10 @@ async function fetchYouTube() {
       const mg = e['media:group'] || {};
       const rawDesc = mg['media:description'];
       const description = typeof rawDesc === 'string' ? rawDesc.slice(0, 280) : '';
-      const thumb = mg['media:thumbnail']?.['@_url'] || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+      // On force l'hôte canonique i.ytimg.com : le flux RSS renvoie des hôtes
+      // shardés (i1/i2/i3.ytimg.com) non autorisés par next/image, ce qui cassait
+      // l'affichage des miniatures.
+      const thumb = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
       return {
         id: videoId,
         slug: `youtube-${videoId}`,
