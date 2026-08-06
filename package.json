@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "fast-xml-parser": "^5.10.1",
     "framer-motion": "^11.3.0",
     "lenis": "^1.3.23",
     "lucide-react": "^0.462.0",
