@@ -14,6 +14,7 @@ import Header from './components/shared/Header';
 import Footer from './components/shared/Footer';
 import MobileCTA from './components/shared/MobileCTA';
 import ContextualPops from './components/shared/ContextualPops';
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -78,6 +79,7 @@ export default function RootLayout({ children }) {
           <MobileCTA />
           <ContextualPops />
         </ToastProvider>
+        <Analytics />
       </body>
     </html>
   );
