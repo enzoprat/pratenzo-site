@@ -73,6 +73,7 @@ export default function Footer() {
               <li><Link href="/realisations">Réalisations</Link></li>
               <li><Link href="/tarifs-creation-site-internet">Tarifs</Link></li>
               <li><Link href="/guides">Guides</Link></li>
+              <li><Link href="/videos">Vidéos</Link></li>
               <li><Link href="/a-propos">À propos</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
