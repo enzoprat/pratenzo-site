@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { ExternalLink, Target, AlertTriangle, Wrench, Layers, Sparkles, Palette, Ban, Award, ChevronDown } from 'lucide-react';
+import { ExternalLink, Target, AlertTriangle, Wrench, Layers, Sparkles, Palette, Ban, Award, ChevronDown, Bot } from 'lucide-react';
 import {
   buildMetadata,
   buildBreadcrumbSchema,
@@ -118,13 +118,15 @@ export default function RealisationDetailPage({ params }) {
 
                 <p className="case__noads">
                   <Ban size={15} aria-hidden="true" />
-                  <span><strong>0 € de publicité en ligne.</strong> Ces positions sont obtenues uniquement grâce au référencement naturel (SEO).</span>
+                  <span><strong>0 € de publicité en ligne.</strong> {r.results.noadsText || 'Ces positions sont obtenues uniquement grâce au référencement naturel (SEO).'}</span>
                 </p>
 
-                <figure className="proofwin detail-results__proof">
-                  <div className="proofwin__bar">
-                    <span /><span /><span />
-                    <div className="proofwin__title">Google Search Console — {r.name}</div>
+                <figure className={`proofwin detail-results__proof ${r.results.proofKind === 'chat' ? 'proofwin--chat' : ''}`}>
+                  <div className={`proofwin__bar ${r.results.proofKind === 'chat' ? 'proofwin__bar--chat' : ''}`}>
+                    {r.results.proofKind === 'chat'
+                      ? <span className="proofwin__chatdot"><Bot size={13} /></span>
+                      : <><span /><span /><span /></>}
+                    <div className="proofwin__title">{r.results.proof.bar || `Google Search Console — ${r.name}`}</div>
                   </div>
                   <Image
                     src={r.results.proof.src} alt={r.results.proof.alt}

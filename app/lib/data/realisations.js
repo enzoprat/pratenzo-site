@@ -69,35 +69,465 @@ export const realisations = [
     slug: 'nils-bouchilloux',
     name: 'Nils Bouchilloux',
     url: 'https://www.nilsbouchilloux.fr',
-    category: 'Site vitrine',
+    category: 'Site vitrine · GEO',
     serviceSlug: 'site-vitrine-bordeaux',
     description:
-      "Site vitrine professionnel pour présenter une activité, structurer les services et faciliter la prise de contact.",
+      "Site vitrine pour Nils Bouchilloux, professeur de golf à Bordeaux (diplômé BPJEPS) : présenter les cours, l'expertise et faciliter la prise de contact — travaillé pour le SEO local et la compréhension par les moteurs IA (GEO).",
     detail: {
       context:
-        "Nils Bouchilloux souhaitait un site vitrine moderne pour présenter son activité de coach professionnel et faciliter la prise de contact des prospects.",
+        "Nils Bouchilloux, enseignant de golf diplômé BPJEPS à Bordeaux, souhaitait un site pour présenter ses cours (individuels, collectifs, travail au radar) et faciliter la prise de contact.",
       goal:
-        "Créer un support professionnel pour gagner en crédibilité, présenter clairement les prestations et générer des demandes qualifiées.",
+        "Gagner en visibilité et en crédibilité sur les recherches liées aux cours de golf à Bordeaux, et être clairement identifiable par les moteurs de recherche comme par les moteurs de réponse IA.",
       problem:
-        "Avant le site, l'activité reposait essentiellement sur les réseaux sociaux. Difficile pour un prospect de se faire une idée complète, et peu de canaux pour le contacter directement.",
+        "Avant le site, l'activité reposait surtout sur le bouche-à-oreille et les réseaux ; difficile pour un prospect — ou un moteur IA — de comprendre précisément l'offre, l'expertise et la zone.",
       solution:
-        "Mise en place d'un site vitrine clair, soigné, avec une page d'accueil orientée présentation, des sections pour les services et les références, ainsi qu'un formulaire de contact intégré.",
+        "Site vitrine structuré autour de l'entité « Nils Bouchilloux — professeur de golf à Bordeaux » : mise en avant de l'expertise (BPJEPS, compétitions PGA Grand Sud-Ouest), des cours et parcours (Mérignac, Cestas, Margaux), avec contenus et données structurées pensés pour le SEO local et le GEO.",
       structure: [
-        "Hero avec présentation directe",
-        "Section services / prestations",
-        "Galerie réalisations",
-        "Présentation personnelle",
-        "Formulaire de contact",
-        "Footer avec coordonnées et liens"
+        "Hero — professeur de golf à Bordeaux",
+        "Cours individuels et collectifs",
+        "Travail au radar & parcours",
+        "Expertise et parcours (BPJEPS)",
+        "Zone d'intervention (Bordeaux, Mérignac…)",
+        "Formulaire de contact"
       ],
       features: [
         'Site responsive mobile / tablette / desktop',
-        'Formulaire de contact intégré',
-        "Boutons d'appel direct",
-        'Optimisation SEO de base',
+        'SEO local (cours de golf Bordeaux)',
+        "Structuration d'entité pour les moteurs IA (GEO)",
+        'Contenus citables',
+        'Formulaire de contact',
         'Mise en ligne accompagnée'
       ],
-      art: 'Direction artistique sobre et premium, palette claire, hiérarchie typographique soignée.'
+      art: 'Direction sobre et premium, univers golf (vert profond, crème), photos mises en valeur.'
+    },
+    results: {
+      accent: '#17643F',
+      intro:
+        "Le travail réalisé sur le site, les contenus et l'entité Nils Bouchilloux permet aux moteurs de réponse IA de mieux comprendre son activité, sa localisation et son expertise. Résultat observé : pour la recherche « meilleur prof de golf Bordeaux », Nils Bouchilloux apparaît en première position dans une réponse ChatGPT.",
+      metrics: [
+        { value: '#1', label: 'cité par ChatGPT' },
+        { value: 'GEO', label: 'moteurs de réponse IA' },
+        { value: 'Bordeaux', label: 'recherche locale' }
+      ],
+      noadsText: "Cette visibilité est obtenue par le travail SEO / GEO sur l'entité — pas par de la publicité.",
+      proofKind: 'chat',
+      proof: {
+        src: '/results/nils-chatgpt.webp', w: 1300, h: 460,
+        alt: 'Réponse ChatGPT à « meilleur prof de golf bordeaux » citant en premier Nils Bouchilloux',
+        bar: 'ChatGPT — réponse réelle observée',
+        caption: "Preuve : réponse ChatGPT observée pour « meilleur prof de golf Bordeaux ». Formulation contextualisée — il ne s'agit pas d'un classement officiel."
+      }
+    }
+  },
+  {
+    slug: 'master-boat-charter',
+    name: 'Master Boat Charter',
+    url: 'https://www.masterboatcharter.com',
+    category: 'Site charter · SEO',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site pour Master Boat Charter, charter privé et excursions en bateau aux Seychelles (La Digue) — nouveau domaine qui génère déjà des demandes.",
+    detail: {
+      context:
+        "Master Boat Charter, entreprise de charter privé et d'excursions en bateau basée à La Digue, aux Seychelles.",
+      goal:
+        "Lancer un nouveau domaine et générer rapidement des demandes qualifiées auprès d'une clientèle internationale.",
+      problem:
+        "Un nom de domaine neuf part de zéro : aucune autorité, aucune visibilité, tout est à construire.",
+      solution:
+        "Site premium à l'univers maritime, optimisé dès la conception pour le référencement et la conversion (demande de charter), pensé pour une clientèle internationale.",
+      structure: [
+        'Hero maritime immersif',
+        'Excursions & charters privés',
+        "La flotte / l'expérience",
+        'Galerie',
+        'Demande de réservation'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'SEO intégré dès la conception',
+        'Base technique rapide',
+        'Formulaire de demande',
+        'Univers premium'
+      ],
+      art: 'Direction premium maritime : turquoise, bleu profond, blanc.'
+    },
+    results: {
+      accent: '#0E7A90',
+      intro:
+        "Un mois après le lancement du nouveau domaine, Master Boat Charter affiche un CTR organique de 6,8 % et a déjà permis de convertir 5 leads — un signal fort pour un site sans historique, obtenu sans publicité.",
+      metrics: [
+        { value: '1 mois', label: 'depuis le lancement' },
+        { value: '6,8 %', label: 'CTR organique' },
+        { value: '5', label: 'leads convertis' }
+      ],
+      proof: {
+        src: '/results/gsc-masterboat.webp', w: 1500, h: 600,
+        alt: 'Google Search Console de Master Boat Charter : CTR organique 6,8 %, 49 clics, 720 impressions sur un mois',
+        caption: 'Preuve : Google Search Console — CTR organique 6,8 % sur le 1er mois.'
+      }
+    }
+  },
+  {
+    slug: 'adu-pieces-auto',
+    name: 'ADU Pièces Auto',
+    url: 'https://adupiecesauto.fr',
+    category: 'Site vente · SEO local',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site pour ADU Pièces Auto (Labastide-Saint-Pierre) : vente de pièces automobiles, consommables et outillage pour professionnels et particuliers — positionné sur Google en deux mois.",
+    detail: {
+      context:
+        "ADU Pièces Auto, vente de pièces automobiles, consommables et outillage pour professionnels et particuliers à Labastide-Saint-Pierre (Tarn-et-Garonne).",
+      goal:
+        "Capter les recherches commerciales de pièces auto dans la région et générer des demandes.",
+      problem:
+        "Les recherches de pièces auto sont très concurrentielles et à forte intention d'achat : sans référencement, impossible d'exister.",
+      solution:
+        "Site rapide structuré autour du catalogue et de l'intention commerciale, optimisé pour le SEO local et la conversion (demande de pièce, livraison express).",
+      structure: [
+        'Hero — pièces auto & outillage',
+        'Familles de produits / catalogue',
+        'Livraison express',
+        'Demande de pièce',
+        'Contact'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'SEO transactionnel & local',
+        'Base technique rapide',
+        'Demande de pièce en ligne',
+        'Livraison express mise en avant'
+      ],
+      art: 'Direction sombre et automobile, accents rouges, lisibilité forte.'
+    },
+    results: {
+      accent: '#E10600',
+      intro:
+        "Sur des recherches directement commerciales liées à la vente de pièces automobiles dans sa région, ADU Pièces Auto a atteint une position moyenne de 3,9 sur Google en deux mois — sans publicité.",
+      metrics: [
+        { value: '3,9', label: 'position moyenne' },
+        { value: '2 mois', label: 'de travail SEO' },
+        { value: '89 · 2,98 k', label: 'clics · impressions' }
+      ],
+      proof: {
+        src: '/results/gsc-adu.webp', w: 1500, h: 736,
+        alt: "Google Search Console d'ADU Pièces Auto : position moyenne 3,9, 89 clics, 2,98 k impressions sur deux mois",
+        caption: 'Preuve : Google Search Console — position moyenne 3,9 sur environ deux mois.'
+      }
+    }
+  },
+  {
+    slug: 'bona-bordeaux',
+    name: 'Bona',
+    url: 'https://bonabordeaux.fr',
+    category: 'Site restaurant',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site pour Bona, brasserie à Bordeaux (cuisine 100 % faite maison et halal), pensé pour présenter la carte, l'histoire et faciliter la réservation.",
+    detail: {
+      context:
+        "Bona, brasserie au cœur de Bordeaux (rue Sanche de Pomiers), propose une cuisine 100 % faite maison et halal à partir de produits frais, ouverte du vendredi au dimanche soir.",
+      goal:
+        "Donner une vitrine à la hauteur de la cuisine : présenter l'univers, la carte et déclencher des réservations.",
+      problem:
+        "Une bonne table reste invisible sans un site clair qui inspire confiance et donne envie avant même de venir.",
+      solution:
+        "Site vitrine immersif : présentation de l'histoire, mise en avant des signatures et de la carte, galerie, informations pratiques et réservation.",
+      structure: [
+        'Hero — brasserie à Bordeaux',
+        'Histoire de la maison',
+        'Les signatures & la carte',
+        'Galerie',
+        'Infos & horaires',
+        'Réserver'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'Galerie photos',
+        'Réservation',
+        'SEO local Bordeaux',
+        'Base technique rapide'
+      ],
+      art: 'Direction élégante et gourmande, ambiance chaleureuse.'
+    }
+  },
+  {
+    slug: 'casanova-conciergerie',
+    name: 'Casa Nova',
+    url: 'https://www.casanova-conciergerie.fr',
+    category: 'Site vitrine premium',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site premium pour Casa Nova, conciergerie haut de gamme à Bordeaux, sur le Bassin d'Arcachon et au Cap Ferret : gestion locative, ménage, accueil voyageurs.",
+    detail: {
+      context:
+        "Casa Nova, conciergerie haut de gamme pour propriétaires exigeants, entre Bordeaux, le Bassin d'Arcachon et le Cap Ferret.",
+      goal:
+        "Attirer des propriétaires et convertir grâce à une image premium et un estimateur de revenus locatifs.",
+      problem:
+        "Sur un marché premium, la confiance se gagne dès la première impression : le site doit incarner l'excellence du service.",
+      solution:
+        "Site premium présentant le service complet (gestion, ménage, accueil, maintenance), la couverture locale et un estimateur de potentiel locatif pour générer des leads.",
+      structure: [
+        'Hero premium',
+        'Le service complet',
+        'Estimateur de revenus locatifs',
+        'Couverture locale',
+        'Contact'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'Estimateur de revenus',
+        'SEO local (Bordeaux, Bassin, Cap Ferret)',
+        'Design premium',
+        'Formulaire de contact'
+      ],
+      art: 'Direction élégante et épurée, univers haut de gamme.'
+    }
+  },
+  {
+    slug: 'koko-studio',
+    name: 'Koko Studio',
+    url: 'https://kokostudio.fr',
+    category: 'Site vitrine · agence créative',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site vitrine premium pour Koko Studio, agence de création de vidéos en IA générative (vidéos hybrides réel × IA ou full IA) pour les marques.",
+    detail: {
+      context:
+        "Koko Studio, agence spécialisée dans la création de vidéos en intelligence artificielle générative pour les marques.",
+      goal:
+        "Incarner un positionnement premium et créatif, et convertir les marques en prises de contact.",
+      problem:
+        "Un positionnement de pointe (IA générative) demande un site qui prouve le niveau créatif dès la première seconde.",
+      solution:
+        "Site vitrine premium à forte identité : mise en scène des formats, des réalisations et des deux approches (hybride / full IA), avec appels à l'action clairs.",
+      structure: [
+        'Hero à fort impact',
+        'Formats proposés',
+        'Approches (hybride / full IA)',
+        'Références clients',
+        'FAQ',
+        'Contact / brief'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'Direction artistique premium',
+        'Animations soignées',
+        'SEO de base',
+        'Formulaire de brief'
+      ],
+      art: 'Direction artistique audacieuse et cinématographique.'
+    }
+  },
+  {
+    slug: 'ddsl-audio',
+    name: 'DDSL Audio',
+    url: 'https://www.ddslaudio.fr',
+    category: 'Site vitrine',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site pour DDSL Audio, location de matériel son, lumière, scène et vidéo à Bordeaux et en Gironde (matériel seul ou installé sur place).",
+    detail: {
+      context:
+        "DDSL Audio loue son parc son, lumière, scène et vidéo à Bordeaux et en Gironde, en location seule ou installée sur place.",
+      goal:
+        "Présenter le parc et les formules, et générer des demandes de devis pour événements.",
+      problem:
+        "Sans catalogue clair en ligne, difficile pour un organisateur d'événement de savoir ce qui est disponible et de demander un devis.",
+      solution:
+        "Site vitrine structuré autour du parc (son, lumière, scène, vidéo), des formules (seul / installé / clé en main) et d'un parcours de demande de devis.",
+      structure: [
+        'Hero — son, lumière, scène, vidéo',
+        'Le parc en détail',
+        'Formules (seul / installé)',
+        "Déroulé d'une prestation",
+        'Réalisations',
+        'Devis'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'Catalogue du parc',
+        'SEO local (Bordeaux, Gironde)',
+        'Demande de devis',
+        'Réalisations'
+      ],
+      art: 'Direction sombre et scénique, mise en valeur du matériel.'
+    }
+  },
+  {
+    slug: 'lcc-espaces-verts',
+    name: 'LCC Espaces Verts',
+    url: 'https://lcc-espacesverts.fr',
+    category: 'Site vitrine artisan',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site vitrine pour LCC Espaces Verts, élagueur à Mérignac et dans Bordeaux Métropole : élagage, abattage, démontage et soins aux arbres.",
+    detail: {
+      context:
+        "LCC Espaces Verts, entreprise d'élagage et de soins aux arbres basée à Mérignac, intervenant dans Bordeaux Métropole.",
+      goal:
+        "Présenter les prestations, rassurer et générer des demandes de devis, y compris en urgence après tempête.",
+      problem:
+        "Les prospects cherchent un élagueur en ligne, souvent en urgence : il faut être trouvé et inspirer confiance vite.",
+      solution:
+        "Site vitrine artisan structuré par prestation (élagage, abattage, démontage, soins), avec déroulé d'intervention, réalisations et zone couverte.",
+      structure: [
+        'Hero — élagage à Mérignac',
+        'Prestations sur les arbres',
+        "Déroulé d'une intervention",
+        'Réalisations avant / après',
+        'Zone (Bordeaux Métropole)',
+        'Contact / devis'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'Pages prestations',
+        'SEO local (élagueur Mérignac)',
+        "Intervention d'urgence mise en avant",
+        'Devis en ligne'
+      ],
+      art: 'Direction nature et professionnelle, mise en valeur des chantiers.'
+    }
+  },
+  {
+    slug: 'czir62',
+    name: 'CZIR62',
+    url: 'https://czir62.fr',
+    category: 'Site vitrine artisan',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site vitrine pour CZIR62, entreprise familiale de couverture à Béthune (62) depuis 1925 : rénovation de toiture, zinguerie, démoussage et recherche de fuite.",
+    detail: {
+      context:
+        "CZIR62, entreprise générale de couverture à Béthune (Pas-de-Calais), artisan familial depuis 1925.",
+      goal:
+        "Présenter clairement les prestations et rassurer les prospects avant le devis, avec une vraie présence locale.",
+      problem:
+        "Sans site, une entreprise de couverture dépend du bouche-à-oreille et n'a rien à montrer aux prospects qui cherchent un couvreur en ligne.",
+      solution:
+        "Site vitrine artisan structuré par prestation (couverture, rénovation, réparation, fuite, démoussage, zinguerie, étanchéité, couverture métallique), avec photos avant / après et déroulé d'intervention.",
+      structure: [
+        'Hero — couvreur à Béthune',
+        'Prestations détaillées',
+        "Déroulé d'une intervention",
+        'Chantiers avant / après',
+        "Zone d'intervention",
+        'Contact / devis'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'Pages prestations',
+        'SEO local (couvreur Béthune)',
+        'Photos de chantiers',
+        'Devis en ligne'
+      ],
+      art: 'Direction sérieuse et rassurante, mise en avant du savoir-faire.'
+    }
+  },
+  {
+    slug: 'saint-medard-rugby-club',
+    name: 'Saint-Médard Rugby Club',
+    url: 'https://smrc33.fr',
+    category: 'Site club sportif',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site pour le Saint-Médard Rugby Club (Saint-Médard-en-Jalles) : école de rugby, équipes, actualités, calendrier, résultats et partenaires.",
+    detail: {
+      context:
+        "Saint-Médard Rugby Club, club de rugby de Saint-Médard-en-Jalles, 121 ans d'histoire, de l'école de rugby à la Nationale 2.",
+      goal:
+        "Fédérer autour du club, informer (actualités, calendrier, résultats) et valoriser les partenaires.",
+      problem:
+        "Un club vivant a besoin d'un point central en ligne pour ses membres, familles, supporters et partenaires.",
+      solution:
+        "Site club complet : présentation, actualités, équipes et école de rugby, calendrier / résultats, espace partenaires et contact.",
+      structure: [
+        'Hero — le club',
+        'Actualités',
+        'Équipes & école de rugby',
+        'Calendrier & résultats',
+        'Partenaires',
+        'Contact'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'Actualités du club',
+        'Espace partenaires',
+        'SEO local',
+        'Contact'
+      ],
+      art: 'Direction dynamique aux couleurs du club (jaune et noir).'
+    }
+  },
+  {
+    slug: 'rosso-cafe',
+    name: 'Rosso Café',
+    url: 'https://www.rossocafe.com',
+    category: 'Site restaurant',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site bilingue pour Rosso, diner italo-américain à Seseh (Bali) : pizza façon Detroit, pâtes maison, brunch et cocktails.",
+    detail: {
+      context:
+        "Rosso, diner italo-américain à Seseh (Bali) : pâtes maison, pizza style Detroit, brunch toute la journée et cocktails.",
+      goal:
+        "Donner une vitrine internationale à l'adresse et inciter à réserver, en français comme en anglais.",
+      problem:
+        "Une adresse tendance a besoin d'un site à la hauteur de son ambiance pour convertir visiteurs locaux et voyageurs.",
+      solution:
+        "Site vitrine immersif et bilingue (EN / FR) : univers, menu, ambiance, informations pratiques et réservation.",
+      structure: [
+        'Hero — diner italo-américain, Bali',
+        "L'histoire",
+        'Le menu',
+        "L'ambiance",
+        'Nous trouver / horaires',
+        'Réserver'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'Bilingue EN / FR',
+        'Galerie ambiance',
+        'Réservation',
+        'SEO international'
+      ],
+      art: 'Direction chaleureuse et vibrante, esprit diner.'
+    }
+  },
+  {
+    slug: 'w888-enalim',
+    name: 'W888 Enalim',
+    url: 'https://w888.fr',
+    category: 'Site vitrine B2B',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site vitrine B2B pour W888 Enalim, intermédiaire commercial indépendant en agroalimentaire, positionné entre l'Europe et le Maghreb.",
+    detail: {
+      context:
+        "W888 Enalim, intermédiaire commercial indépendant en agroalimentaire, au carrefour de l'Europe et du Maghreb.",
+      goal:
+        "Crédibiliser une activité B2B et générer des prises de contact d'industriels et d'importateurs.",
+      problem:
+        "Une activité d'intermédiation B2B doit inspirer confiance et clarté immédiate à des mandants exigeants.",
+      solution:
+        "Site vitrine sobre et professionnel : proposition de valeur claire, cibles (industriels, importateurs), couverture géographique et contact.",
+      structure: [
+        'Hero — intermédiation agroalimentaire',
+        'Pour qui (industriels, importateurs)',
+        'Couverture Europe-Maghreb',
+        'Approche',
+        'Contact'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'Structure B2B claire',
+        'SEO de base',
+        'Formulaire de contact',
+        'Bilingue possible'
+      ],
+      art: 'Direction sobre, institutionnelle et rassurante.'
     }
   },
   {
