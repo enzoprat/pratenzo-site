@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import {
-  Gauge, ArrowRight, ArrowLeft, Sparkles, Check, Globe, Search,
-  Bot, TrendingUp, Send, CheckCircle, Link2, User
+  ArrowRight, ArrowLeft, Sparkles, Check, Globe, Search,
+  Bot, Send, CheckCircle, Link2, User
 } from 'lucide-react';
 import Reveal from '@/app/components/shared/Reveal';
 import { config } from '@/app/lib/config';
@@ -274,27 +274,6 @@ export default function Simulator() {
               </div>
             </div>
 
-            {/* ---------- Tableau de bord live ---------- */}
-            <aside className="sim__viz" aria-hidden="true">
-              <div className="sim__viz-label">Votre situation actuelle</div>
-              <ul className="sim__viz-list">
-                <li><span>Demandes / mois</span><strong>{demandes >= 50 ? '50+' : demandes}</strong></li>
-                <li><span>Deviennent clientes</span><strong>{conversion} %</strong></li>
-                <li><span>Valeur d'un client</span><strong>{panier.toLocaleString('fr-FR')} €</strong></li>
-              </ul>
-              <div className="sim__viz-sep" />
-              <div className="sim__viz-block">
-                <span>CA mensuel attribuable au site</span>
-                <div className="sim__viz-ca">≈ {eur(caActuel)}<em>/ mois</em></div>
-              </div>
-              <div className="sim__viz-pot">
-                <span>Potentiel avec +{extra} demandes / mois</span>
-                <div className="sim__viz-plus"><TrendingUp size={18} /> + {eur(potentiel)}<em>/ mois</em></div>
-              </div>
-              <p className="sim__viz-formula">
-                Calcul : demandes × taux de conversion × valeur client.
-              </p>
-            </aside>
           </div>
         </Reveal>
 
