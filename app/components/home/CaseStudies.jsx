@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Zap, Ship, Bot, Wrench, Check } from 'lucide-react';
+import { ArrowRight, Zap, Ship, Bot, Wrench, Check, ChevronDown, Award, Ban } from 'lucide-react';
 import Reveal from '@/app/components/shared/Reveal';
 
 /* ============================================================
@@ -11,13 +11,17 @@ import Reveal from '@/app/components/shared/Reveal';
 
 const BRUNCH_QUERIES = [
   ['brunch autour de bordeaux', '1,0'],
+  ['brunch dimanche matin autour de moi', '1,0'],
   ['brunch talence', '1,0'],
   ['restaurant ouvert le dimanche pessac', '1,0'],
   ["brunch villenave-d'ornon", '1,1'],
   ['brunch mérignac', '1,2'],
   ['brunch pessac', '1,3'],
+  ['brunch pessac centre', '1,3'],
+  ['brunch autour de moi', '1,3'],
   ['meilleur brunch mérignac', '1,7'],
-  ['restaurants pessac centre', '1,8']
+  ['restaurants pessac centre', '1,8'],
+  ['restau pessac', '2,0']
 ];
 
 const NILS_CHAIN = [
@@ -35,6 +39,9 @@ export default function CaseStudies() {
             <h2 id="results-title" className="results__title">Mode Résultats.</h2>
             <p className="results__sub">
               Quatre projets. Quatre preuves que le travail ne s'arrête pas à la mise en ligne.
+            </p>
+            <p className="results__noads">
+              <Ban size={14} aria-hidden="true" /> Des résultats obtenus <strong>sans publicité en ligne</strong> — uniquement par le référencement naturel (SEO) et le travail d'entité (GEO).
             </p>
           </header>
         </Reveal>
@@ -70,16 +77,28 @@ export default function CaseStudies() {
                   <div className="case__metric"><strong>24 · 792</strong><span>clics · impressions</span></div>
                 </div>
 
-                <ol className="case__queries" aria-label="Requêtes et positions Google — Brunch Area">
-                  {BRUNCH_QUERIES.slice(0, 5).map(([q, p], i) => (
-                    <li key={q} style={{ '--i': i }}>
-                      <span className="case__q-rank">{String(i + 1).padStart(2, '0')}</span>
-                      <span className="case__q-text">{q}</span>
-                      <span className="case__q-dots" aria-hidden="true" />
-                      <span className="case__q-pos">{p}</span>
-                    </li>
-                  ))}
-                </ol>
+                <p className="case__noads">
+                  <Ban size={15} aria-hidden="true" />
+                  <span><strong>0 € de publicité en ligne.</strong> Ces positions sont obtenues uniquement grâce au référencement naturel (SEO).</span>
+                </p>
+
+                <details className="case__disc">
+                  <summary className="case__disc-trigger">
+                    <span className="case__disc-label"><Award size={15} aria-hidden="true" /> Découvrir les requêtes en 1ʳᵉ position</span>
+                    <ChevronDown size={16} className="case__disc-chevron" aria-hidden="true" />
+                  </summary>
+                  <ol className="case__queries" aria-label="Requêtes et positions Google — Brunch Area">
+                    {BRUNCH_QUERIES.map(([q, p], i) => (
+                      <li key={q} style={{ '--i': i }}>
+                        <span className="case__q-rank">{String(i + 1).padStart(2, '0')}</span>
+                        <span className="case__q-text">{q}</span>
+                        <span className="case__q-dots" aria-hidden="true" />
+                        <span className="case__q-pos">{p}</span>
+                      </li>
+                    ))}
+                  </ol>
+                  <p className="case__disc-foot">Positions Google réelles (Search Console) — obtenues sans aucune publicité.</p>
+                </details>
               </div>
 
               <div className="case__proof">
