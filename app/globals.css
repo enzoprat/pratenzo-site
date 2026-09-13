@@ -4649,3 +4649,20 @@ p  { margin: 0 0 1em; color: var(--muted); }
   .faqx__q { padding: 15px 16px; font-size: 0.96rem; }
   .faqx__a { padding: 0 16px 16px; }
 }
+
+/* --- Bloc Résultats sur page réalisation (/realisations/[slug]) --- */
+.detail-results { padding: 8px 0 4px; }
+.detail-results__inner {
+  max-width: 820px; margin: 0 auto; padding: 30px 34px;
+  border: 1px solid var(--line); border-top: 3px solid var(--case);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(120% 140% at 100% 0, color-mix(in srgb, var(--case) 7%, transparent), transparent 55%),
+    var(--bg-soft);
+  box-shadow: var(--shadow-sm);
+}
+.detail-results__intro { color: var(--ink-2); line-height: 1.65; font-size: 1.02rem; margin: 10px 0 22px; }
+.detail-results__metrics { margin-bottom: 18px; }
+.detail-results__proof { margin-top: 18px; }
+.detail-results__disc { margin-top: 16px; }
+@media (max-width: 768px) { .detail-results__inner { padding: 22px 18px; } }

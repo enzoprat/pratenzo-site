@@ -2,6 +2,70 @@
 
 export const realisations = [
   {
+    slug: 'brunch-area',
+    name: 'Brunch Area',
+    url: 'https://bruncharea.fr',
+    category: 'Site restaurant · SEO local',
+    serviceSlug: 'site-vitrine-bordeaux',
+    description:
+      "Site pour une adresse de brunch à Pessac, pensé dès la conception pour le référencement local — positionné en tête de Google sur les recherches de brunch autour de Bordeaux, sans publicité.",
+    detail: {
+      context:
+        "Brunch Area, adresse de brunch à Pessac (produits frais, recettes maison), voulait exister sur Google face à une clientèle qui cherche où bruncher autour de Bordeaux le week-end.",
+      goal:
+        "Être trouvé rapidement sur les recherches locales de brunch et de restauration, et transformer ces recherches en visites.",
+      problem:
+        "Un nouveau site n'a aucune visibilité tant qu'il n'est pas indexé puis positionné, et la concurrence locale sur le brunch autour de Bordeaux est forte.",
+      solution:
+        "Architecture SEO locale pensée dès la conception : contenus ciblant les intentions locales (brunch à Pessac, Talence, Mérignac, Villenave-d'Ornon, Bordeaux), balisage propre, base technique rapide et cohérence avec la fiche Google.",
+      structure: [
+        "Hero avec proposition claire (brunch, produits frais)",
+        'La formule et les recettes maison',
+        'Infos pratiques et horaires',
+        "Accès et localisation (Pessac / Bordeaux)",
+        'Contact et réservation'
+      ],
+      features: [
+        'Site responsive mobile / tablette / desktop',
+        'SEO local intégré dès la conception',
+        'Contenus ciblant les recherches locales de brunch',
+        'Base technique rapide (Core Web Vitals)',
+        'Cohérence avec la fiche Google Business',
+        'Indexation accompagnée'
+      ],
+      art: 'Direction chaleureuse et gourmande, palette douce, mise en valeur des produits.'
+    },
+    results: {
+      accent: '#6E5BA8',
+      intro:
+        "Après indexation, Brunch Area s'est positionné en tête de Google sur de nombreuses recherches locales liées au brunch et à la restauration autour de Bordeaux — uniquement grâce au référencement naturel, sans aucune publicité en ligne. Plusieurs requêtes ont atteint les positions 1 à 2 dans les 48 heures suivant leur indexation.",
+      metrics: [
+        { value: '2,8', label: 'position moyenne' },
+        { value: '48 h', label: 'après indexation' },
+        { value: '24 · 792', label: 'clics · impressions' }
+      ],
+      proof: {
+        src: '/results/gsc-bruncharea.webp', w: 1500, h: 544,
+        alt: 'Google Search Console de Brunch Area : position moyenne 2,8, 24 clics, 792 impressions',
+        caption: 'Preuve : Google Search Console — position moyenne 2,8 sur la période.'
+      },
+      queries: [
+        ['brunch autour de bordeaux', '1,0'],
+        ['brunch dimanche matin autour de moi', '1,0'],
+        ['brunch talence', '1,0'],
+        ['restaurant ouvert le dimanche pessac', '1,0'],
+        ["brunch villenave-d'ornon", '1,1'],
+        ['brunch mérignac', '1,2'],
+        ['brunch pessac', '1,3'],
+        ['brunch pessac centre', '1,3'],
+        ['brunch autour de moi', '1,3'],
+        ['meilleur brunch mérignac', '1,7'],
+        ['restaurants pessac centre', '1,8'],
+        ['restau pessac', '2,0']
+      ]
+    }
+  },
+  {
     slug: 'nils-bouchilloux',
     name: 'Nils Bouchilloux',
     url: 'https://www.nilsbouchilloux.fr',

@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { ExternalLink, Target, AlertTriangle, Wrench, Layers, Sparkles, Palette } from 'lucide-react';
+import { ExternalLink, Target, AlertTriangle, Wrench, Layers, Sparkles, Palette, Ban, Award, ChevronDown } from 'lucide-react';
 import {
   buildMetadata,
   buildBreadcrumbSchema,
@@ -99,6 +100,63 @@ export default function RealisationDetailPage({ params }) {
             </div>
           </div>
         </section>
+
+        {r.results && (
+          <section className="detail-results" style={{ '--case': r.results.accent }}>
+            <div className="container">
+              <div className="detail-results__inner">
+                <span className="section__eyebrow">Résultats réels</span>
+                <p className="detail-results__intro">{r.results.intro}</p>
+
+                <div className="case__metrics detail-results__metrics">
+                  {r.results.metrics.map(m => (
+                    <div className="case__metric" key={m.label}>
+                      <strong>{m.value}</strong><span>{m.label}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <p className="case__noads">
+                  <Ban size={15} aria-hidden="true" />
+                  <span><strong>0 € de publicité en ligne.</strong> Ces positions sont obtenues uniquement grâce au référencement naturel (SEO).</span>
+                </p>
+
+                <figure className="proofwin detail-results__proof">
+                  <div className="proofwin__bar">
+                    <span /><span /><span />
+                    <div className="proofwin__title">Google Search Console — {r.name}</div>
+                  </div>
+                  <Image
+                    src={r.results.proof.src} alt={r.results.proof.alt}
+                    width={r.results.proof.w} height={r.results.proof.h}
+                    sizes="(max-width: 980px) 100vw, 900px" className="proofwin__img"
+                  />
+                </figure>
+                <p className="proofwin__cap">{r.results.proof.caption}</p>
+
+                {r.results.queries && (
+                  <details className="case__disc detail-results__disc">
+                    <summary className="case__disc-trigger">
+                      <span className="case__disc-label"><Award size={15} aria-hidden="true" /> Découvrir les requêtes en 1ʳᵉ position</span>
+                      <ChevronDown size={16} className="case__disc-chevron" aria-hidden="true" />
+                    </summary>
+                    <ol className="case__queries" aria-label={`Requêtes et positions Google — ${r.name}`}>
+                      {r.results.queries.map(([q, p], i) => (
+                        <li key={q} style={{ '--i': i }}>
+                          <span className="case__q-rank">{String(i + 1).padStart(2, '0')}</span>
+                          <span className="case__q-text">{q}</span>
+                          <span className="case__q-dots" aria-hidden="true" />
+                          <span className="case__q-pos">{p}</span>
+                        </li>
+                      ))}
+                    </ol>
+                    <p className="case__disc-foot">Positions Google réelles (Search Console) — obtenues sans aucune publicité.</p>
+                  </details>
+                )}
+              </div>
+            </div>
+          </section>
+        )}
 
         <section className="container" style={{ paddingBottom: 60 }}>
           <div className="detail-grid">
