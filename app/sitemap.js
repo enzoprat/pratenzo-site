@@ -1,6 +1,7 @@
 import { config } from './lib/config';
 import { realisations } from './lib/data/realisations';
 import { services } from './lib/data/services';
+import { niches } from './lib/data/niches';
 import { getTranscriptSlugs } from './lib/videos';
 
 const SITE = config.baseUrl;
@@ -51,13 +52,19 @@ export default function sitemap() {
     changeFrequency: 'monthly'
   }));
 
+  const nichePages = niches.map(n => ({
+    url: `${SITE}/${n.urlSlug}`,
+    priority: 0.85,
+    changeFrequency: 'monthly'
+  }));
+
   const videoPages = getTranscriptSlugs().map(slug => ({
     url: `${SITE}/videos/${slug}`,
     priority: 0.6,
     changeFrequency: 'monthly'
   }));
 
-  return [...staticPages, ...servicePages, ...realisationPages, ...videoPages].map(p => ({
+  return [...staticPages, ...servicePages, ...realisationPages, ...nichePages, ...videoPages].map(p => ({
     ...p,
     lastModified: now
   }));

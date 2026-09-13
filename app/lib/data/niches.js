@@ -31,12 +31,20 @@ export const niches = [
     caseSlugs: ['brunch-area', 'bona-bordeaux', 'rosso-cafe'],
     faq: [
       {
+        q: "Combien coûte la création d'un site internet pour un restaurant ?",
+        a: "Il n'y a pas de prix unique : le montant dépend du nombre de pages, du contenu (carte, photos), des fonctionnalités (réservation) et du niveau de référencement souhaité. Un site pensé pour remplir la salle est un investissement, pas un abonnement jetable. Estimation gratuite après un premier échange, sans engagement."
+      },
+      {
         q: "Comment mon restaurant peut-il apparaître sur Google ?",
         a: "En combinant un site optimisé pour les recherches locales (« restaurant + ville », « brunch près de moi ») et une fiche Google Business tenue à jour (horaires, photos, avis). Les deux se renforcent."
       },
       {
-        q: "Un site sert-il encore quand on a déjà les réseaux et les plateformes ?",
-        a: "Oui. Les réseaux et plateformes vous louent une audience et prélèvent des commissions. Votre site vous appartient, capte les recherches Google et convertit sans intermédiaire."
+        q: "Comment créer une présence en ligne efficace pour son restaurant ?",
+        a: "Au-delà du site : une fiche Google complète, des photos qui donnent faim, la réservation en ligne et des informations pratiques claires. Le site est le point central qui relie tout — et il vous appartient, contrairement aux plateformes qui prélèvent des commissions."
+      },
+      {
+        q: "Un site gratuit suffit-il pour un restaurant ?",
+        a: "Un site gratuit dépanne, mais il est souvent lent, peu personnalisable et mal référencé — trois défauts rédhibitoires quand un client compare des adresses sur mobile. Un site professionnel se rentabilise par les réservations qu'il génère."
       },
       {
         q: "Peut-on intégrer la réservation ?",
@@ -71,6 +79,14 @@ export const niches = [
     ],
     caseSlugs: ['czir62', 'lcc-espaces-verts', 'couverture-gironde'],
     faq: [
+      {
+        q: "Combien coûte la création d'un site internet pour un artisan ?",
+        a: "Le prix dépend du nombre de prestations à présenter, des photos de chantiers, de la zone couverte et du référencement local souhaité. Un site d'artisan est un outil qui ramène des chantiers, pas une simple dépense. Estimation gratuite après un premier échange, sans engagement."
+      },
+      {
+        q: "Quel type de site internet choisir pour un artisan ?",
+        a: "Un site vitrine ciblé : prestations claires, réalisations avant/après, zones d'intervention, avis et demande de devis. Pas besoin d'e-commerce — l'objectif est d'être trouvé localement et de déclencher l'appel ou le devis."
+      },
       {
         q: "Comment être trouvé quand un client cherche un artisan en urgence ?",
         a: "Avec un site optimisé pour les recherches locales (« métier + ville ») et une fiche Google à jour : c'est le réflexe n°1 d'un particulier en cas d'urgence."

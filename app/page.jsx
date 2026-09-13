@@ -11,9 +11,9 @@ import FaqIntent from './components/home/FaqIntent';
 import ContactForm from './components/forms/ContactForm';
 
 export const metadata = buildMetadata({
-  title: 'Création site internet Bordeaux | Prat Enzo',
+  title: 'Création de sites web, SEO & GEO pour entreprises | Prat Enzo',
   description:
-    "Création de sites vitrines, Shopify et click & collect à Bordeaux. Pour artisans, commerces, indépendants et entreprises locales en Gironde.",
+    "Création de sites web pensés pour le SEO et le GEO : être trouvé sur Google et compris par les moteurs de recherche IA. Depuis Bordeaux, pour les entreprises partout en France.",
   path: '/',
   image: '/og-image.png'
 });
