@@ -3,6 +3,7 @@ import JsonLd from './components/seo/JsonLd';
 
 import Hero from './components/home/Hero';
 import GoogleSearch from './components/home/GoogleSearch';
+import Targets from './components/home/Targets';
 import CaseStudies from './components/home/CaseStudies';
 import Diagnostic from './components/home/Diagnostic';
 import ContactForm from './components/forms/ContactForm';
@@ -29,6 +30,7 @@ export default function HomePage() {
         {/* Socle home — refonte premium (Site web → SEO → GEO) */}
         <Hero />
         <GoogleSearch />
+        <Targets />
         <CaseStudies />
         <Diagnostic />
         <ContactForm />

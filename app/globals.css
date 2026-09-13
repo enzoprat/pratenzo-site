@@ -4466,12 +4466,34 @@ p  { margin: 0 0 1em; color: var(--muted); }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .gsim__serp { padding: 4px 18px; }
-  .gsim__zone { grid-template-columns: 1fr; gap: 12px; padding: 20px 0; }
-  .gsim__bar { padding: 14px 18px; }
-  .gsim__pack { flex-direction: column; }
-  .gsim__map { width: 100%; height: 54px; }
-  .gsim__site { flex-direction: column; align-items: flex-start; }
+  .gsearch { padding: 40px 0; }
+  .gsearch__head { margin-bottom: 22px; }
+  .gsearch__sub { font-size: 0.94rem; }
+  .gsim__bar { padding: 12px 15px; gap: 10px; }
+  .gsim__input { font-size: 1rem; }
+  .gsim__chips { margin: 12px 0 16px; gap: 6px; }
+  .gsim__chips-label { width: 100%; text-align: center; }
+  .gsim__chip { font-size: 0.8rem; padding: 6px 11px; }
+  .gsim__serp { padding: 0 12px; }
+  .gsim__zone { grid-template-columns: 1fr; gap: 7px; padding: 12px 0; }
+  .gsim__tab { font-size: 0.68rem; padding: 5px 9px; gap: 5px; }
+  .gsim__card { padding: 11px 12px; }
+  .gsim__note { font-size: 0.74rem; margin-top: 6px; line-height: 1.4; }
+  .gsim__ai-q { font-size: 0.76rem; margin-bottom: 5px; }
+  .gsim__ai-a { font-size: 0.82rem; line-height: 1.42; margin-bottom: 8px; }
+  .gsim__ai-a strong { display: inline; }
+  .gsim__sources span { font-size: 0.68rem; padding: 3px 8px; }
+  .gsim__result-title { font-size: 0.85rem; }
+  .gsim__result-desc { font-size: 0.76rem; }
+  .gsim__pack { flex-direction: row; gap: 12px; }
+  .gsim__map { width: 52px; }
+  .gsim__pack-name { font-size: 0.82rem; flex-wrap: wrap; min-width: 0; }
+  .gsim__pack-list, .gsim__pack-list li { min-width: 0; }
+  .gsim__stars { display: none; }
+  .gsim__site { flex-direction: row; align-items: center; gap: 12px; }
+  .gsim__site-mock { width: 96px; }
+  .gsim__site-txt strong { font-size: 0.88rem; }
+  .gsim__site-txt span { font-size: 0.82rem; }
 }
 
 /* =========================================================
@@ -4585,3 +4607,24 @@ p  { margin: 0 0 1em; color: var(--muted); }
   border-radius: 0 0 12px 12px;
 }
 .case__disc-foot { font-size: 0.76rem; color: var(--muted); margin: 10px 2px 0; }
+
+/* =========================================================
+   SECTION CIBLES — "Pour qui" (compacte)
+   ========================================================= */
+.targets { background: var(--bg-soft); }
+.targets__head { max-width: 680px; margin: 0 auto 34px; text-align: center; }
+.targets__head h2 { margin: 12px 0 12px; }
+.targets__sub { color: var(--muted); font-size: 1.02rem; line-height: 1.6; }
+.targets__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.target {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 20px; border-radius: var(--radius-md);
+  border: 1px solid var(--line); background: var(--bg);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.target:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--primary-3); }
+.target__icon { flex-shrink: 0; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; color: var(--primary); background: linear-gradient(135deg, rgba(79,70,229,0.12), rgba(139,92,246,0.12)); }
+.target__title { font-size: 1.02rem; margin: 0 0 3px; color: var(--ink); }
+.target__desc { font-size: 0.88rem; color: var(--muted); line-height: 1.45; margin: 0; }
+@media (max-width: 900px) { .targets__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .targets__grid { grid-template-columns: 1fr; } .target { padding: 16px; } }

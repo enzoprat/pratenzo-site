@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowRight, Zap, Ship, Bot, Wrench, Check, ChevronDown, Award, Ban } from 'lucide-react';
+import { Zap, Ship, Bot, Wrench, Check, ChevronDown, Award, Ban } from 'lucide-react';
 import Reveal from '@/app/components/shared/Reveal';
 
 /* ============================================================
@@ -272,16 +271,6 @@ export default function CaseStudies() {
           </article>
         </Reveal>
 
-        {/* ============ CTA ============ */}
-        <Reveal>
-          <div className="results__cta">
-            <h3>Et votre site&nbsp;?</h3>
-            <p>Savez-vous réellement ce qu'il produit aujourd'hui&nbsp;?</p>
-            <Link href="/#diagnostic" className="btn btn--primary">
-              Analyser mon site <ArrowRight size={16} />
-            </Link>
-          </div>
-        </Reveal>
       </div>
     </section>
   );
