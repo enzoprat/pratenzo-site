@@ -1,6 +1,6 @@
 /* Réalisations Prat Enzo — données partagées */
 
-export const realisations = [
+const realisationsRaw = [
   {
     slug: 'brunch-area',
     name: 'Brunch Area',
@@ -728,6 +728,23 @@ export const realisations = [
       art: 'Style artisan moderne, photos chantiers mises en valeur.'
     }
   }
+];
+
+/* Ordre d'affichage imposé (page /realisations). Le reste suit dans l'ordre du tableau. */
+const FEATURED_ORDER = [
+  'couverture-gironde',
+  'saint-medard-rugby-club',
+  'nils-bouchilloux',
+  'brunch-area',
+  'starsonstage',
+  'bona-bordeaux',
+  'rosso-cafe',
+  'koko-studio'
+];
+
+export const realisations = [
+  ...FEATURED_ORDER.map(s => realisationsRaw.find(r => r.slug === s)).filter(Boolean),
+  ...realisationsRaw.filter(r => !FEATURED_ORDER.includes(r.slug))
 ];
 
 export function getRealisationBySlug(slug) {
