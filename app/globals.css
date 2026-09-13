@@ -4628,3 +4628,24 @@ p  { margin: 0 0 1em; color: var(--muted); }
 .target__desc { font-size: 0.88rem; color: var(--muted); line-height: 1.45; margin: 0; }
 @media (max-width: 900px) { .targets__grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .targets__grid { grid-template-columns: 1fr; } .target { padding: 16px; } }
+
+/* =========================================================
+   FAQ — questions Google (People Also Ask), accordéon <details>
+   ========================================================= */
+.faqx__head { max-width: 680px; margin: 0 auto 34px; text-align: center; }
+.faqx__head h2 { margin: 12px 0 12px; }
+.faqx__sub { color: var(--muted); font-size: 1.02rem; line-height: 1.6; }
+.faqx__list { max-width: 760px; margin: 0 auto; }
+.faqx__item { border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--bg-soft); margin-bottom: 10px; overflow: hidden; transition: border-color .2s ease, box-shadow .2s ease; }
+.faqx__item[open] { border-color: color-mix(in srgb, var(--primary) 30%, var(--line)); box-shadow: var(--shadow-sm); }
+.faqx__q { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; cursor: pointer; list-style: none; font-weight: 600; color: var(--ink); font-size: 1.02rem; }
+.faqx__q::-webkit-details-marker { display: none; }
+.faqx__item:hover .faqx__q { color: var(--primary); }
+.faqx__icon { flex-shrink: 0; color: var(--primary); transition: transform .25s ease; }
+.faqx__item[open] .faqx__icon { transform: rotate(45deg); }
+.faqx__a { padding: 0 20px 20px; }
+.faqx__a p { margin: 0; color: var(--ink-2); line-height: 1.65; font-size: 0.96rem; }
+@media (max-width: 768px) {
+  .faqx__q { padding: 15px 16px; font-size: 0.96rem; }
+  .faqx__a { padding: 0 16px 16px; }
+}
