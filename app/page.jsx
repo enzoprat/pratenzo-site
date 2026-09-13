@@ -5,6 +5,7 @@ import JsonLd from './components/seo/JsonLd';
 import Hero from './components/home/Hero';
 import Marquee from './components/shared/Marquee';
 import ForWho from './components/home/ForWho';
+import CaseStudies from './components/home/CaseStudies';
 import Simulator from './components/home/Simulator';
 import Services from './components/home/Services';
 import Stats from './components/home/Stats';
@@ -52,6 +53,7 @@ export default function HomePage() {
           ]}
         />
         <ForWho />
+        <CaseStudies />
         <Simulator />
         <Services />
         <Stats />
