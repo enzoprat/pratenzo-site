@@ -1,21 +1,10 @@
-import { buildMetadata, buildFaqSchema, buildWebPageSchema } from './lib/seo';
-import { faqHome } from './lib/data/faq';
+import { buildMetadata, buildWebPageSchema } from './lib/seo';
 import JsonLd from './components/seo/JsonLd';
 
 import Hero from './components/home/Hero';
-import Marquee from './components/shared/Marquee';
-import ForWho from './components/home/ForWho';
+import GoogleSearch from './components/home/GoogleSearch';
 import CaseStudies from './components/home/CaseStudies';
 import Simulator from './components/home/Simulator';
-import Services from './components/home/Services';
-import Stats from './components/home/Stats';
-import Included from './components/home/Included';
-import WhyWebsite from './components/home/WhyWebsite';
-import Process from './components/home/Process';
-import Realisations from './components/home/Realisations';
-import Options from './components/home/Options';
-import Maintenance from './components/home/Maintenance';
-import FAQ from './components/home/FAQ';
 import ContactForm from './components/forms/ContactForm';
 
 export const metadata = buildMetadata({
@@ -32,38 +21,16 @@ export default function HomePage() {
     title: metadata.title,
     description: metadata.description
   });
-  const faq = buildFaqSchema(faqHome);
 
   return (
     <>
-      <JsonLd data={[webpage, faq]} />
+      <JsonLd data={[webpage]} />
       <main>
+        {/* Socle home — refonte premium (Site web → SEO → GEO) */}
         <Hero />
-        <Marquee
-          speed={50}
-          items={[
-            'Création site internet Bordeaux',
-            'Site vitrine Bordeaux',
-            'E-commerce Shopify',
-            'Click & collect',
-            'Refonte de site',
-            'SEO local Gironde',
-            'Site artisan',
-            'Mobile first'
-          ]}
-        />
-        <ForWho />
+        <GoogleSearch />
         <CaseStudies />
         <Simulator />
-        <Services />
-        <Stats />
-        <Included />
-        <WhyWebsite />
-        <Process />
-        <Realisations />
-        <Options />
-        <Maintenance />
-        <FAQ />
         <ContactForm />
       </main>
     </>

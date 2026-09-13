@@ -4373,3 +4373,102 @@ p  { margin: 0 0 1em; color: var(--muted); }
 @media (prefers-reduced-motion: reduce) {
   .case__queries li, .case__chain-node { animation: none !important; }
 }
+
+/* =========================================================
+   SECTION GOOGLE INTERACTIVE — SERP simulée (démo illustrative)
+   4 surfaces où Enzo intervient : GEO · SEO local · SEO · Site web
+   ========================================================= */
+.gsearch { background: var(--bg); }
+.gsearch__head { max-width: 760px; margin: 0 auto 40px; text-align: center; }
+.gsearch__head h2 { margin: 12px 0 14px; }
+.gsearch__sub { color: var(--muted); font-size: 1.08rem; line-height: 1.6; }
+
+.gsim { max-width: 880px; margin: 0 auto; }
+
+.gsim__bar {
+  display: flex; align-items: center; gap: 14px;
+  max-width: 720px; margin: 0 auto;
+  padding: 17px 22px; border-radius: 999px;
+  background: #fff; border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-lg);
+}
+.gsim__bar > svg { color: var(--muted); flex-shrink: 0; }
+.gsim__input { flex: 1; min-width: 0; border: none; outline: none; background: transparent; font-family: inherit; font-size: clamp(1.05rem, 2.4vw, 1.35rem); font-weight: 500; color: var(--ink); }
+.gsim__demo { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); background: var(--bg); border: 1px solid var(--line); padding: 4px 8px; border-radius: 6px; }
+
+.gsim__chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; margin: 16px 0 30px; }
+.gsim__chips-label { font-size: 0.82rem; color: var(--muted); }
+.gsim__chip { padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line-strong); background: #fff; font-size: 0.85rem; color: var(--ink-2); cursor: pointer; transition: all .2s ease; }
+.gsim__chip:hover { border-color: var(--primary-3); color: var(--primary); }
+.gsim__chip.is-on { background: var(--primary); border-color: var(--primary); color: #fff; }
+
+.gsim__serp { border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--bg-soft); padding: 6px 28px; box-shadow: var(--shadow-md); }
+
+.gsim__zone { --z: var(--primary); display: grid; grid-template-columns: 208px 1fr; gap: 26px; align-items: start; padding: 24px 0; border-top: 1px solid var(--line); }
+.gsim__zone:first-child { border-top: none; }
+.gsim__zone--geo { --z: var(--accent); }
+.gsim__zone--local { --z: #0C93AD; }
+.gsim__zone--seo { --z: var(--primary); }
+.gsim__zone--site { --z: #3F4A63; }
+
+.gsim__tab {
+  display: inline-flex; align-items: center; gap: 7px; align-self: start;
+  font-size: 0.76rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--z); background: color-mix(in srgb, var(--z) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--z) 26%, transparent);
+  padding: 8px 13px; border-radius: 999px;
+}
+.gsim__card { border: 1px solid var(--line); border-left: 3px solid var(--z); border-radius: var(--radius-md); padding: 16px 18px; background: #fff; box-shadow: var(--shadow-sm); }
+.gsim__note { font-size: 0.85rem; color: var(--muted); margin: 11px 0 0; line-height: 1.5; }
+
+/* GEO card */
+.gsim__ai-q { font-size: 0.82rem; color: var(--muted); margin-bottom: 8px; }
+.gsim__ai-a { font-size: 0.92rem; line-height: 1.55; color: var(--ink); margin: 0 0 12px; }
+.gsim__ai-a strong { color: var(--z); }
+.gsim__sources { display: flex; gap: 7px; flex-wrap: wrap; }
+.gsim__sources span { font-size: 0.72rem; color: var(--ink-2); background: color-mix(in srgb, var(--z) 8%, #fff); border: 1px solid var(--line); border-radius: 999px; padding: 4px 9px; }
+
+/* Local pack */
+.gsim__pack { display: flex; gap: 16px; align-items: stretch; }
+.gsim__map { flex-shrink: 0; width: 84px; border-radius: 12px; display: grid; place-items: center; color: var(--z); background: radial-gradient(circle at 40% 30%, color-mix(in srgb, var(--z) 18%, #fff), color-mix(in srgb, var(--z) 6%, #fff)); border: 1px solid color-mix(in srgb, var(--z) 20%, transparent); }
+.gsim__pack-list { list-style: none; margin: 0; padding: 0; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.gsim__pack-list li { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 10px; }
+.gsim__pack-list li.is-you { background: color-mix(in srgb, var(--z) 8%, transparent); border: 1px solid color-mix(in srgb, var(--z) 24%, transparent); }
+.gsim__pin { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--z); color: #fff; font-size: 0.7rem; font-weight: 800; flex-shrink: 0; }
+.gsim__pack-name { font-size: 0.88rem; font-weight: 600; color: var(--ink); display: flex; align-items: center; gap: 8px; }
+.gsim__badge { display: inline-flex; align-items: center; gap: 3px; font-size: 0.68rem; font-weight: 700; color: var(--z); background: #fff; border: 1px solid color-mix(in srgb, var(--z) 30%, transparent); border-radius: 999px; padding: 2px 7px; }
+.gsim__stars { display: inline-flex; gap: 1px; margin-left: auto; color: #F5A623; }
+.gsim__ghost-line { flex: 1; height: 8px; border-radius: 5px; background: #EDF0F6; }
+
+/* Organic */
+.gsim__result { padding: 10px 12px; border-radius: 10px; margin-bottom: 8px; }
+.gsim__result.is-you { background: color-mix(in srgb, var(--z) 7%, transparent); border: 1px solid color-mix(in srgb, var(--z) 22%, transparent); }
+.gsim__result-url { font-size: 0.76rem; color: #16A34A; }
+.gsim__result-title { font-size: 0.98rem; font-weight: 600; color: var(--z); line-height: 1.3; }
+.gsim__result-desc { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
+.gsim__result--ghost { display: flex; flex-direction: column; gap: 7px; }
+.gsim__result--ghost span { height: 8px; border-radius: 5px; background: #EDF0F6; }
+.gsim__result--ghost span:nth-child(1) { width: 30%; }
+.gsim__result--ghost span:nth-child(2) { width: 70%; background: #E3E8F1; height: 11px; }
+.gsim__result--ghost span:nth-child(3) { width: 90%; }
+
+/* Site */
+.gsim__site { display: flex; gap: 18px; align-items: center; }
+.gsim__site-mock { flex-shrink: 0; width: 130px; border-radius: 10px; border: 1px solid var(--line); background: #fff; padding: 8px; display: flex; flex-direction: column; gap: 6px; box-shadow: var(--shadow-sm); }
+.gsim__site-bar { height: 8px; border-radius: 3px; background: #EDF0F6; }
+.gsim__site-hero { height: 34px; border-radius: 6px; background: linear-gradient(135deg, var(--primary-deep), var(--primary) 60%, var(--accent)); }
+.gsim__site-row { height: 6px; border-radius: 3px; background: #E7EBF3; }
+.gsim__site-row.short { width: 60%; }
+.gsim__site-cta { height: 12px; width: 46%; border-radius: 4px; background: var(--z); margin-top: 2px; }
+.gsim__site-txt strong { display: block; color: var(--ink); font-size: 0.95rem; margin-bottom: 3px; }
+.gsim__site-txt span { color: var(--muted); font-size: 0.88rem; line-height: 1.5; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gsim__serp { padding: 4px 18px; }
+  .gsim__zone { grid-template-columns: 1fr; gap: 12px; padding: 20px 0; }
+  .gsim__bar { padding: 14px 18px; }
+  .gsim__pack { flex-direction: column; }
+  .gsim__map { width: 100%; height: 54px; }
+  .gsim__site { flex-direction: column; align-items: flex-start; }
+}
