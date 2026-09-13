@@ -4,7 +4,7 @@ import JsonLd from './components/seo/JsonLd';
 import Hero from './components/home/Hero';
 import GoogleSearch from './components/home/GoogleSearch';
 import CaseStudies from './components/home/CaseStudies';
-import Simulator from './components/home/Simulator';
+import Diagnostic from './components/home/Diagnostic';
 import ContactForm from './components/forms/ContactForm';
 
 export const metadata = buildMetadata({
@@ -30,7 +30,7 @@ export default function HomePage() {
         <Hero />
         <GoogleSearch />
         <CaseStudies />
-        <Simulator />
+        <Diagnostic />
         <ContactForm />
       </main>
     </>

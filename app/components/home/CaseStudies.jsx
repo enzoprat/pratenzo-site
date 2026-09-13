@@ -258,7 +258,7 @@ export default function CaseStudies() {
           <div className="results__cta">
             <h3>Et votre site&nbsp;?</h3>
             <p>Savez-vous réellement ce qu'il produit aujourd'hui&nbsp;?</p>
-            <Link href="/#simulateur" className="btn btn--primary">
+            <Link href="/#diagnostic" className="btn btn--primary">
               Analyser mon site <ArrowRight size={16} />
             </Link>
           </div>
