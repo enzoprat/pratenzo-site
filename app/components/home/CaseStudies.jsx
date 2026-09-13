@@ -71,7 +71,7 @@ export default function CaseStudies() {
                 </div>
 
                 <ol className="case__queries" aria-label="Requêtes et positions Google — Brunch Area">
-                  {BRUNCH_QUERIES.map(([q, p], i) => (
+                  {BRUNCH_QUERIES.slice(0, 5).map(([q, p], i) => (
                     <li key={q} style={{ '--i': i }}>
                       <span className="case__q-rank">{String(i + 1).padStart(2, '0')}</span>
                       <span className="case__q-text">{q}</span>

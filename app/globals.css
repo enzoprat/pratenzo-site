@@ -4254,26 +4254,26 @@ p  { margin: 0 0 1em; color: var(--muted); }
    MODE RÉSULTATS — études de cas (données réelles GSC/ChatGPT)
    Accent par projet via --case ; fond cohérent ; la donnée = le design.
    ========================================================= */
-.results { padding: 100px 0; background: var(--bg); }
-.results__head { text-align: center; max-width: 720px; margin: 0 auto 56px; }
+.results { padding: 72px 0; background: var(--bg); }
+.results__head { text-align: center; max-width: 720px; margin: 0 auto 38px; }
 .results__title { font-size: clamp(2.2rem, 5vw, 3.4rem); letter-spacing: -0.03em; margin: 10px 0 12px; }
 .results__sub { color: var(--muted); font-size: 1.1rem; }
 
 .case {
   position: relative; isolation: isolate; overflow: hidden;
-  padding: 44px; margin-bottom: 30px;
+  padding: 30px 34px; margin-bottom: 18px;
   border: 1px solid var(--line);
   border-top: 3px solid var(--case);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-lg);
   background:
     radial-gradient(120% 140% at 100% 0, color-mix(in srgb, var(--case) 7%, transparent), transparent 55%),
     var(--bg-soft);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
 }
 .case__ghost {
-  position: absolute; top: -0.18em; right: 0.1em; z-index: 0;
-  font-size: clamp(9rem, 22vw, 20rem); font-weight: 800; line-height: 0.8;
-  letter-spacing: -0.04em; color: color-mix(in srgb, var(--case) 9%, transparent);
+  position: absolute; top: -0.14em; right: 0.12em; z-index: 0;
+  font-size: clamp(5.5rem, 13vw, 11rem); font-weight: 800; line-height: 0.8;
+  letter-spacing: -0.04em; color: color-mix(in srgb, var(--case) 8%, transparent);
   pointer-events: none; user-select: none;
 }
 .case__ghost i { font-style: normal; font-size: 0.5em; }
@@ -4281,7 +4281,7 @@ p  { margin: 0 0 1em; color: var(--muted); }
 
 .case__grid {
   position: relative; z-index: 1;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 38px; align-items: center;
 }
 .case--rev .case__proof { order: -1; }
 
@@ -4295,20 +4295,20 @@ p  { margin: 0 0 1em; color: var(--muted); }
   border: 1px solid color-mix(in srgb, var(--case) 24%, transparent);
   padding: 6px 12px; border-radius: 999px;
 }
-.case__brand { font-size: clamp(1.6rem, 3vw, 2.2rem); letter-spacing: -0.02em; margin: 0 0 4px; color: var(--ink); }
-.case__sector { color: var(--muted); font-size: 0.95rem; margin: 0 0 22px; }
-.case__headline { font-size: clamp(1.15rem, 1.8vw, 1.4rem); font-weight: 650; color: var(--ink); line-height: 1.3; margin: 0 0 12px; }
-.case__desc { color: var(--ink-2); line-height: 1.65; margin: 0 0 24px; }
+.case__brand { font-size: clamp(1.5rem, 2.6vw, 2rem); letter-spacing: -0.02em; margin: 0 0 3px; color: var(--ink); }
+.case__sector { color: var(--muted); font-size: 0.92rem; margin: 0 0 16px; }
+.case__headline { font-size: clamp(1.1rem, 1.6vw, 1.3rem); font-weight: 650; color: var(--ink); line-height: 1.3; margin: 0 0 10px; }
+.case__desc { color: var(--ink-2); line-height: 1.55; font-size: 0.95rem; margin: 0 0 18px; }
 .case__desc strong { color: var(--case); font-weight: 700; }
 
-.case__metrics { display: flex; flex-wrap: wrap; gap: 26px; }
-.case__metric strong { display: block; font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 800; letter-spacing: -0.02em; color: var(--case); line-height: 1; }
+.case__metrics { display: flex; flex-wrap: wrap; gap: 22px; }
+.case__metric strong { display: block; font-size: clamp(1.5rem, 2.4vw, 2rem); font-weight: 800; letter-spacing: -0.02em; color: var(--case); line-height: 1; }
 .case__metric span { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
 
 /* --- Liste requêtes (mini ranking Google) --- */
-.case__queries { list-style: none; margin: 26px 0 0; padding: 0; }
+.case__queries { list-style: none; margin: 18px 0 0; padding: 0; }
 .case__queries li {
-  display: flex; align-items: center; gap: 12px; padding: 9px 0;
+  display: flex; align-items: center; gap: 12px; padding: 6px 0;
   border-bottom: 1px solid var(--line);
   animation: case-row .5s both; animation-delay: calc(var(--i) * 70ms);
 }
@@ -4358,15 +4358,16 @@ p  { margin: 0 0 1em; color: var(--muted); }
 
 /* --- Responsive --- */
 @media (max-width: 1024px) {
-  .case { padding: 32px 26px; }
-  .case__grid { grid-template-columns: 1fr; gap: 32px; }
+  .case { padding: 26px 24px; }
+  .case__grid { grid-template-columns: 1fr; gap: 24px; }
   .case--rev .case__proof { order: 0; }
-  .case__ghost { font-size: clamp(7rem, 30vw, 11rem); opacity: 0.8; }
+  .case__ghost { font-size: clamp(5rem, 22vw, 8rem); }
 }
 @media (max-width: 768px) {
-  .results { padding: 70px 0; }
-  .case { padding: 26px 20px; }
-  .case__metrics { gap: 18px; }
+  .results { padding: 48px 0; }
+  .results__head { margin-bottom: 28px; }
+  .case { padding: 20px 18px; margin-bottom: 14px; }
+  .case__metrics { gap: 16px; }
   .case__q-text { font-size: 0.85rem; }
   .proofwin__title { font-size: 0.7rem; }
 }
