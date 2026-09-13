@@ -6,6 +6,7 @@ import Hero from './components/home/Hero';
 import GoogleSearch from './components/home/GoogleSearch';
 import Targets from './components/home/Targets';
 import CaseStudies from './components/home/CaseStudies';
+import Reviews from './components/home/Reviews';
 import Diagnostic from './components/home/Diagnostic';
 import FaqIntent from './components/home/FaqIntent';
 import ContactForm from './components/forms/ContactForm';
@@ -35,6 +36,7 @@ export default function HomePage() {
         <GoogleSearch />
         <Targets />
         <CaseStudies />
+        <Reviews />
         <Diagnostic />
         <FaqIntent />
         <ContactForm />

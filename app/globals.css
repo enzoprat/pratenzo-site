@@ -4689,3 +4689,44 @@ p  { margin: 0 0 1em; color: var(--muted); }
 .niche__lever p { font-size: 0.9rem; color: var(--muted); line-height: 1.5; margin: 0; }
 @media (max-width: 1024px) { .niche__levers { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .niche__levers { grid-template-columns: 1fr; } .niche__pains { grid-template-columns: 1fr; } }
+
+/* =========================================================
+   AVIS CLIENTS — vrais avis Google (fiche Prat Enzo 5,0/5)
+   ========================================================= */
+.reviews__head { text-align: center; max-width: 720px; margin: 0 auto 36px; }
+.reviews__head h2 { margin: 12px 0 16px; }
+.reviews__rating {
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 9px 18px; border-radius: 999px;
+  background: var(--bg-soft); border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-sm); text-decoration: none; color: var(--ink);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.reviews__rating:hover { border-color: var(--primary-3); box-shadow: var(--shadow-md); }
+.reviews__stars { display: inline-flex; gap: 1px; }
+.reviews__rating strong { font-size: 1.05rem; font-weight: 800; }
+.reviews__count { color: var(--muted); font-size: 0.9rem; }
+
+.reviews__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.review {
+  display: flex; flex-direction: column; gap: 12px;
+  padding: 22px; border-radius: var(--radius-md);
+  border: 1px solid var(--line); background: var(--bg-soft); box-shadow: var(--shadow-sm);
+}
+.review__head { display: flex; align-items: center; gap: 12px; }
+.review__avatar {
+  flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%;
+  display: grid; place-items: center; color: #fff; font-weight: 700; font-size: 1.02rem;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+.review__id { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+.review__name { font-weight: 650; color: var(--ink); font-size: 0.95rem; }
+.review__date { font-size: 0.8rem; color: var(--muted); }
+.review__g { margin-left: auto; flex-shrink: 0; opacity: 0.9; }
+.review__stars { display: inline-flex; gap: 1px; }
+.review__text { color: var(--ink-2); line-height: 1.6; font-size: 0.92rem; margin: 0; }
+
+.reviews__cta { text-align: center; margin-top: 30px; }
+
+@media (max-width: 1024px) { .reviews__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .reviews__grid { grid-template-columns: 1fr; } }
