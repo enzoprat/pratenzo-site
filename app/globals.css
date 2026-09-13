@@ -4666,3 +4666,26 @@ p  { margin: 0 0 1em; color: var(--muted); }
 .detail-results__proof { margin-top: 18px; }
 .detail-results__disc { margin-top: 16px; }
 @media (max-width: 768px) { .detail-results__inner { padding: 22px 18px; } }
+
+/* Lien vers l'étude de cas complète (home Mode Résultats) */
+.case__link { display: inline-flex; align-items: center; gap: 6px; margin-top: 20px; font-weight: 650; font-size: 0.92rem; color: var(--case); text-decoration: none; }
+.case__link svg { transition: transform .2s ease; }
+.case__link:hover svg { transform: translateX(3px); }
+
+/* =========================================================
+   PAGES NICHES (métier) — /creation-site-internet-<niche>
+   ========================================================= */
+.niche { padding-bottom: 40px; }
+.niche__block { max-width: 900px; margin: 0 auto 44px; }
+.niche__block > h2 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); letter-spacing: -0.02em; margin: 0 0 18px; }
+.niche__pains { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 22px; }
+.niche__pains li { display: flex; align-items: flex-start; gap: 10px; color: var(--ink-2); line-height: 1.5; font-size: 0.98rem; }
+.niche__pains li svg { color: var(--primary); flex-shrink: 0; margin-top: 3px; }
+.niche__levers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.niche__lever { padding: 22px; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--bg-soft); box-shadow: var(--shadow-sm); }
+.niche__lever-icon { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; color: var(--primary); background: linear-gradient(135deg, rgba(79,70,229,0.12), rgba(139,92,246,0.12)); margin-bottom: 12px; }
+.niche__lever-tag { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+.niche__lever h3 { font-size: 1.05rem; margin: 0 0 6px; color: var(--ink); }
+.niche__lever p { font-size: 0.9rem; color: var(--muted); line-height: 1.5; margin: 0; }
+@media (max-width: 1024px) { .niche__levers { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .niche__levers { grid-template-columns: 1fr; } .niche__pains { grid-template-columns: 1fr; } }

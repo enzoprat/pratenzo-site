@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { Zap, Ship, Bot, Wrench, Check, ChevronDown, Award, Ban } from 'lucide-react';
+import Link from 'next/link';
+import { Zap, Ship, Bot, Wrench, Check, ChevronDown, Award, Ban, ArrowRight } from 'lucide-react';
 import Reveal from '@/app/components/shared/Reveal';
 
 /* ============================================================
@@ -98,6 +99,8 @@ export default function CaseStudies() {
                   </ol>
                   <p className="case__disc-foot">Positions Google réelles (Search Console) — obtenues sans aucune publicité.</p>
                 </details>
+
+                <Link href="/realisations/brunch-area" className="case__link">Voir l'étude de cas complète <ArrowRight size={15} /></Link>
               </div>
 
               <div className="case__proof">
@@ -147,6 +150,8 @@ export default function CaseStudies() {
                   <div className="case__metric"><strong>6,8 %</strong><span>CTR organique</span></div>
                   <div className="case__metric"><strong>5</strong><span>leads convertis</span></div>
                 </div>
+
+                <Link href="/realisations/master-boat-charter" className="case__link">Voir l'étude de cas complète <ArrowRight size={15} /></Link>
               </div>
 
               <div className="case__proof">
@@ -199,6 +204,8 @@ export default function CaseStudies() {
                     </span>
                   ))}
                 </div>
+
+                <Link href="/realisations/nils-bouchilloux" className="case__link">Voir l'étude de cas complète <ArrowRight size={15} /></Link>
               </div>
 
               <div className="case__proof">
@@ -251,6 +258,8 @@ export default function CaseStudies() {
                   <div className="case__metric"><strong>2 mois</strong><span>de travail SEO</span></div>
                   <div className="case__metric"><strong>89 · 2,98 k</strong><span>clics · impressions</span></div>
                 </div>
+
+                <Link href="/realisations/adu-pieces-auto" className="case__link">Voir l'étude de cas complète <ArrowRight size={15} /></Link>
               </div>
 
               <div className="case__proof">
