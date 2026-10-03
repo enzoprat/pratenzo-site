@@ -6,6 +6,7 @@ import {
   buildBreadcrumbSchema
 } from '@/app/lib/seo';
 import { realisations } from '@/app/lib/data/realisations';
+import { siteThumb } from '@/app/lib/shots';
 import { config } from '@/app/lib/config';
 import JsonLd from '@/app/components/seo/JsonLd';
 import PageShell from '@/app/components/shared/PageShell';
@@ -19,9 +20,6 @@ export const metadata = buildMetadata({
 });
 
 const breadcrumb = [{ name: 'Réalisations', path: '/realisations' }];
-
-const screenshot = (url) =>
-  `https://s0.wp.com/mshots/v1/${encodeURIComponent(url)}?w=800&h=500`;
 
 export default function RealisationsPage() {
   const collection = buildCollectionSchema({ path: '/realisations', title: metadata.title, description: metadata.description });
@@ -52,7 +50,7 @@ export default function RealisationsPage() {
               <article key={r.slug} className="real-card" style={{ flex: 'unset' }}>
                 <div className="real-card__media">
                   <img
-                    src={screenshot(r.url)}
+                    src={siteThumb(r.slug, r.url)}
                     alt={`Aperçu du site ${r.name} — ${r.category} réalisé par Prat Enzo`}
                     loading="lazy"
                     width="800"

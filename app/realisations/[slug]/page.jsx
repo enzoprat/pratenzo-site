@@ -14,12 +14,10 @@ import {
   getRelatedRealisations
 } from '@/app/lib/data/realisations';
 import { getServiceBySlug } from '@/app/lib/data/services';
+import { siteThumb } from '@/app/lib/shots';
 import JsonLd from '@/app/components/seo/JsonLd';
 import PageShell from '@/app/components/shared/PageShell';
 import CtaBlock from '@/app/components/shared/CtaBlock';
-
-const screenshot = (url) =>
-  `https://s0.wp.com/mshots/v1/${encodeURIComponent(url)}?w=1000&h=625`;
 
 export function generateStaticParams() {
   return realisations.map(r => ({ slug: r.slug }));
@@ -164,10 +162,10 @@ export default function RealisationDetailPage({ params }) {
           <div className="detail-grid">
             <div className="detail-media">
               <img
-                src={screenshot(r.url)}
+                src={siteThumb(r.slug, r.url)}
                 alt={`Aperçu du site ${r.name} — ${r.category} réalisé par Prat Enzo`}
-                width="1000"
-                height="625"
+                width="800"
+                height="500"
                 loading="eager"
               />
             </div>
